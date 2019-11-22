@@ -2,7 +2,7 @@
 name: Request for collaborators
 about: Use this issue type if you are looking for someone to help you maintain or update your package.
 title: "[Collab]: "
-labels: 
+labels: category/collab
 ---
 
 # Request for collaborators

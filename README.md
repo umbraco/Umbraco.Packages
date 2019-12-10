@@ -25,3 +25,7 @@ We also use this repository to track our progress and to display a [roadmap](htt
 ## Get in touch!
 
 If you want to get in touch with the team about something not covered by our issues then feel free to reach out to any of us on Twitter, or write an email to packages@umbraco.com.
+
+## Package newsletter
+
+You can sign up for the [package newsletter](https://our.umbraco.com/about-packages/#package-newsletter), to receive updates on new features you can use as a package developer, breaking changes in new Umbraco versions and more.

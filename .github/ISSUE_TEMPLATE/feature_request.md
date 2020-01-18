@@ -25,7 +25,7 @@ Core functionality
 - an example could be to add functionality to include media in packages and let packages install media as easily as they install content
 
 Our feature
-- a ruqeust to change how a package related function on Our works
+- a request to change how a package related function on Our works
 - an example could be to ask for an API to push package versions to instead of having to do it manually through the member section
 -->
 

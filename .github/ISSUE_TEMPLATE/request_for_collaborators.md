@@ -21,5 +21,5 @@ Ex.
 I would like someone to take over this package, I no longer have the time to maintain it.
 
 Ex. 
-I would like someone to help me upgrade my package to work with Umbravo version x.x.x
+I would like someone to help me upgrade my package to work with Umbraco version x.x.x
  -->

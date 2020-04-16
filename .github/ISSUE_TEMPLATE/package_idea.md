@@ -1,7 +1,7 @@
 ---
 name: Package idea
 about: Use this issue type if you are looking for feedback on a package idea, or if you have an idea and are looking for help creating it.
-title: "[Idea]: "
+title: ""
 labels: category/idea
 ---
 

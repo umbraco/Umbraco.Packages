@@ -9,3 +9,4 @@
 | Automating testing of packages with Cypress + the Umbraco test suite! | 1 |
 | Writing rock-solid docs for packages | 1 |
 | Getting a package from code to published! | 1 |
+| For new pkg devs, an introduction to Umbraco's extension points - prop-editors, trees, dashboards, etc. | 1 |

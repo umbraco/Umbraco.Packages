@@ -48,13 +48,33 @@ Run the site from VS/Rider and go through the installer - you can install with o
 
 Once the site is running we are ready to look into creating a package! 
 
-## App_Plugin extensions
+## App_Plugins extensions
+
+One of the most common types of packages are based on App_Plugins extensions, these extensions are ways to implement custom made versions of backoffice elements. For example dashboards, property editors, content apps, sections, trees, healthcheks, etc.
+
+Other than these backoffice extensions you can also include any c# code you wish in a packages, or any other type of file. But first let's look at some of the common backoffice extensions!
 
 ### Dashboard
 
-### Content app
+You may have noticed earlier when you created the package site that you added a `-d` option, that has already set up a starting point for creating a dashboard for you. If you look in the PackageWorkshop class library:
 
-### Property editor
+![PackageWorkshop class library][class-library]
+
+However since these files are not included in the .Site project you can't see the dashboard yet. If you navigate back to the root folder of the PackageWorkshop you will find a gulpfile.js file. If you in a CMD run the following commands:
+
+```
+npm install
+
+gulp
+```
+
+Then you will get a message that it is watching the App Plugins folder, and in your solution you will see that you now have a copy of the App Plugins folder available:
+
+![Result of the gulp command][gulp-watch]
+
+The cool thing here is that since it is a watch command, any small changes you may make will trigger a new copy so you can immediately test. Finally let's restart the site so we can see the dashboard in the Content section!
+
+![Custom dashboard][dashboard]
 
 ## Creating a package from the backoffice
 
@@ -65,5 +85,10 @@ Once the site is running we are ready to look into creating a package!
 ## Using UmbPack 
 
 
+
+<!-- Image and link sources -->
 [team-logo]: images/U_Package_team.png "Package team logo"
 [set-up]: set-up.md "Setting up"
+[class-library]: images/class-library.png "PackageWorkshop class library"
+[gulp-watch]: images/gulp-watch.png "Result of the gulp command"
+[dashboard]: images/dashboard.png "Dashboard"

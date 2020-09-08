@@ -78,6 +78,30 @@ The cool thing here is that since it is a watch command, any small changes you m
 
 ## Creating a package from the backoffice
 
+So far we haven't actually done anything related to packages. Lots of people add extensions to their sites without ever packaging them up and sharing with others. So let's look at how we can share our brand new dashboard with others!
+
+First things first - let's package up the files we want to share, and then take a short look at the package file structure.
+
+First step is to go to the packages section in the backoffice, then click the `Created` tab in the top right corner of the section. Inside this section there is a `Create package` button - click that.
+
+Now fill out the name at the top, and then all the info in the Package Properties, an example could be:
+
+![Example package info][package-info]
+
+Next section is the Package Content - we are going to leave it empty for this package, but this is where you can include doc types, content nodes, etc. Very useful for fx starter kit packages that want to include some starter content.
+
+The next section is Package Files, here under "Path to file" we will find the package folder inside App_Plugins and select it, additionally the ~/bin/PackageWorkshop.dll file (containing the controllers from the class library).
+
+![Example package files][package-files]
+
+We can also skip the Package Actions, which is a way to run some code when installing or uninstalling packages, you can read more [in the documentation](https://our.umbraco.com/documentation/Extending/Packages/Package-Actions/)!
+
+Now click create in the bottom right, and after that you can download the zip package.
+
+## Understanding the package structure
+
+
+
 ## Pushing to Github
 
 ## Creating a package on Our
@@ -92,3 +116,5 @@ The cool thing here is that since it is a watch command, any small changes you m
 [class-library]: images/class-library.png "PackageWorkshop class library"
 [gulp-watch]: images/gulp-watch.png "Result of the gulp command"
 [dashboard]: images/dashboard.png "Dashboard"
+[package-info]: images/package-info.png "package-info"
+[package-files]: images/package-files.png "package-files"

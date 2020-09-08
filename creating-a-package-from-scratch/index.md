@@ -100,7 +100,100 @@ Now click create in the bottom right, and after that you can download the zip pa
 
 ## Understanding the package structure
 
+If you peek into the zip file of the package we created you will see that all of the files you had are there, but they are not in folders anymore, they are all added in the root of the zip. There is also a new file called `package.xml`:
 
+![zip-files][zip-files]
+
+The `package.xml` file is the one containing all package metadata, and the file references that ensures Umbraco knows where to place the files when installing a package.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<umbPackage>
+  <files>
+    ...
+  </files>
+  <info>
+    <package>
+      <name>PackageWorkshopDashboard</name>
+      <version>1.0.0</version>
+      <iconUrl></iconUrl>
+      <license url="http://opensource.org/licenses/MIT">MIT License</license>
+      <url>https://umbraco.com</url>
+      <requirements type="Strict">
+        <major>8</major>
+        <minor>6</minor>
+        <patch>2</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Jesper Mayntzhusen</name>
+      <website>https://github.com/jmayntzhusen</website>
+    </author>
+    <contributors></contributors>
+    <readme><![CDATA[Dashboard that shows the current server time and date, intended for use in the Package Team package workshop!]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <Actions />
+</umbPackage>
+```
+
+This is the format it has - with the files element edited out for now. You can see all the info we added in the package creator in the backoffice is here under the `<info>` element. It also has elements to add DocumentTypes, and many other Umbraco schema items, as well as Package Actions under the `<Actions />` element.
+
+A package.xml file can be super long if you include content and schema elements as they will all be in this one file, but since we haven't done so we don't have to worry about it - let's take a look at how files are included:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>dashboard.html</guid>
+      <orgPath>~/App_Plugins/PackageWorkshop/Dashboard</orgPath>
+      <orgName>dashboard.html</orgName>
+    </file>
+    <file>
+      <guid>dashboardController.js</guid>
+      <orgPath>~/App_Plugins/PackageWorkshop/Dashboard</orgPath>
+      <orgName>dashboardController.js</orgName>
+    </file>
+    <file>
+      <guid>dashboardService.js</guid>
+      <orgPath>~/App_Plugins/PackageWorkshop/Dashboard</orgPath>
+      <orgName>dashboardService.js</orgName>
+    </file>
+    <file>
+      <guid>package.manifest</guid>
+      <orgPath>~/App_Plugins/PackageWorkshop/Dashboard</orgPath>
+      <orgName>package.manifest</orgName>
+    </file>
+    <file>
+      <guid>en.xml</guid>
+      <orgPath>~/App_Plugins/PackageWorkshop/Dashboard/Lang</orgPath>
+      <orgName>en.xml</orgName>
+    </file>
+    <file>
+      <guid>PackageWorkshop.dll</guid>
+      <orgPath>~/bin</orgPath>
+      <orgName>PackageWorkshop.dll</orgName>
+    </file>
+  </files>
+  ...
+</umbPackage>
+```
+
+So here you will notice that while we only added the top level folder in the backoffice, it went through that folder and added a `<file>` element for every file found within that folder. And each file has 3 properties - `guid`, `orgPath` & `orgName`. 
+
+You don't have to worry too much about guid and orgName, they are just references to the file name. Umbraco will automatically rename the file if there are conflicts, since they are stored in a flat structure it is quite likely, fx lets say you had these two files in your package:
+
+~/App_Plugins/PackageWorkshop/Dashboard/main.css
+~/App_Plugins/PackageWorkshop/ContentApp/main.css
+
+Both would have the same name and be thrown in the root of the zip file - this would cause a conflict and Umbraco would rename them to randomly generated names. These names would correspond to the `guid` property, while the `orgName` and `orgPath` would make up the original names - and would be where the package would place and name the file when being intalled.
 
 ## Pushing to Github
 
@@ -118,3 +211,4 @@ Now click create in the bottom right, and after that you can download the zip pa
 [dashboard]: images/dashboard.png "Dashboard"
 [package-info]: images/package-info.png "package-info"
 [package-files]: images/package-files.png "package-files"
+[zip-files]: images/zip-files.png "zip-files"

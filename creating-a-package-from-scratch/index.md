@@ -213,9 +213,73 @@ Now your package is on Our, and if the "Go live" button is clicked it is visible
 
 ## Pushing to Github
 
+If you are creating a package in order to share it with others it is a great idea to also share the source code. It is the open source way!
 
+To share it, and make it easier to manage and deploy updates we will set up a Github repository for the package. This workshop assumes you know what Github is, and that you have an account. 
+
+Create a fresh repo, with no readme, gitignore nor based on a template. On the second screen it will give you a command to push an existing repository to the new Github repo, should look like this but with your own user in the link:
+
+```
+git remote add origin https://github.com/jmayntzhusen/package-workshop.git
+git branch -M master
+git push -u origin master
+```
+
+If you jump back to your command line in the folder that has the .sln file and the gitignore, you may notice that there is no git repo by default, so let's create one:
+
+```
+git init
+git add .
+git commit -m "Initial commit, dashboard package"
+```
+
+At this point you have your solution in a local git repository, and we can then use the command from Github to push it up:
+
+```
+git remote add origin https://github.com/jmayntzhusen/package-workshop.git
+git branch -M master
+git push -u origin master
+```
+
+Now you have it all on Github:
+
+![Github repo][github-repo]
+
+Final step is to set it up to automatically package new changes and deploy them to Our.
 
 ## Using UmbPack 
+
+If you think back to the beginning when we set up our sites using the Package Templates you may remember me saying that by default you get a Github action installed as well.
+
+If you check out the ~/.github/workflows folder in your solution, you will see there is a readme file and a build.yml file. The build.yml file is used by Github actions, which will perform some tasks for you when certain criteria are met. If you never worked with continuous integration and deployment (CI/CD) before, then this may seem like magic, but we are using a very simple version in this example.
+
+The build.yml file contains several things, let's do a quick overview:
+
+Line 14-17:
+```
+on:
+  push:
+    tags:
+      - "release/*"
+```
+
+This means that when you push a new tag called `release/*` it will run the action, and only in that case.
+
+The action that it actually performs is what is under `jobs:build:steps`, there is a step that uses our Tool UmbPack to create the package based on the package.xml file explained earlier, it does what the Backoffice download did but without ever having to open Umbraco!
+
+```yml
+- name: Create Umbraco package file
+  run: UmbPack pack ./package.xml -o ${{ env.OUTPUT }} -v ${{ steps.get_version.outputs.VERSION }}
+```
+
+Below it you can add another step:
+
+```yml
+- name: Push to Our
+  run: umbpack push -k ${{ secrets.UMBRACO_DEPLOY_KEY }} ${{ env.Output }}\PackageWorkshopDashboard_${{ steps.get_tag.outputs.VERSION }}.zip
+```
+
+This won't work yet, but before moving on and getting it to work let's have a look at what UmbPack can do for you!
 
 
 
@@ -229,3 +293,4 @@ Now your package is on Our, and if the "Go live" button is clicked it is visible
 [package-files]: images/package-files.png "package-files"
 [zip-files]: images/zip-files.png "zip-files"
 [package-overview]: images/package-overview.png "Package overview"
+[github-repo]: images/github-repo.png "Github repo"

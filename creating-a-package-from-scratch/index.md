@@ -195,9 +195,25 @@ You don't have to worry too much about guid and orgName, they are just reference
 
 Both would have the same name and be thrown in the root of the zip file - this would cause a conflict and Umbraco would rename them to randomly generated names. These names would correspond to the `guid` property, while the `orgName` and `orgPath` would make up the original names - and would be where the package would place and name the file when being intalled.
 
+## Creating a package on Our
+
+At this point we have a complete package and can push it to [Our Umbraco](https://our.umbraco.com/packages/) which is the where the Umbraco package repository is. The packages on that website are also the ones that are featured in the package section of the backoffice.
+
+To create a package on Our, you first need an account on there and the account needs to have a certain level of karma - which can be gained by responding to forum posts.
+
+Once you log in you can go to your [package overview](https://our.umbraco.com/member/profile/packages/) which should look a bit like this:
+
+![Package overview][package-overview]
+
+Click the "Add package" button and fill out all the information, upload the package and save in the end.
+
+Note: If you don't intend for people to use the package (as in this workshop), then please don't click the "Go live" button in the end.
+
+Now your package is on Our, and if the "Go live" button is clicked it is visible for all to see! Next step is to make it a bit simpler to deploy updates to the package. It is perfectly fine to log in here, and upload a new version each time. The next steps will show an easier way though..
+
 ## Pushing to Github
 
-## Creating a package on Our
+
 
 ## Using UmbPack 
 
@@ -212,3 +228,4 @@ Both would have the same name and be thrown in the root of the zip file - this w
 [package-info]: images/package-info.png "package-info"
 [package-files]: images/package-files.png "package-files"
 [zip-files]: images/zip-files.png "zip-files"
+[package-overview]: images/package-overview.png "Package overview"

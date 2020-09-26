@@ -10,3 +10,4 @@ Please add your repo to the list below. Please make sure you link to a filtered 
 - [Full Text Search](https://github.com/skttl/umbraco-fulltextsearch8/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 - [Matryoshka](https://github.com/skttl/umbraco-matryoshka/labels/help%20wanted)
 - [Unversion](https://github.com/skttl/umbraco-unversion/labels/up-for-grabs)
+- [Redirects Viewer](https://github.com/dawoe/umbraco-redirectsviewer/labels/up-for-grabs)

@@ -20,4 +20,6 @@ It is always a good idea to comment on the issue you'd like to work on, and let 
 
 ### How do you know if it is a valid contribution?
 
-First step is of course to ensure that your contribution is valuable. If you run through all the repos and add punctuation or fix types in the comments it's not really valuable to the package. You should start by reading up on the [Hacktoberfest quality standards](https://hacktoberfest.digitalocean.com/details/#quality), but if you are in doubt whether it counts for Umbraco, feel free to reach out to packages@umbraco.com!
+First step is of course to ensure that your contribution is valuable. If you run through all the repos and add punctuation or fix typos in the comments it's not really valuable to the package. You should start by reading up on the [Hacktoberfest quality standards](https://hacktoberfest.digitalocean.com/details/#quality), but if you are in doubt whether it counts for Umbraco, feel free to reach out to packages@umbraco.com!
+
+During Hacktoberfest we will run through the repos and check for merged PR's and congratulate you on the PR and verify whether it counts for Umbraco Hacktoberfest! 🎉

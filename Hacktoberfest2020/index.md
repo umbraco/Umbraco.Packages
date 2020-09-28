@@ -17,3 +17,7 @@ For the issue to be considered valid it must be a valuable contribution required
 If you are interested in contributing to an Umbraco package, please check out the repos on the [Hacktoberfest package repo list](hacktoberfest-package-repos.md) list - and make sure to read the contributing guidelines of the repo first!
 
 It is always a good idea to comment on the issue you'd like to work on, and let the maintainer know that you intend to work on it, also to ask any questions you may have!
+
+### How do you know if it is a valid contribution?
+
+First step is of course to ensure that your contribution is valuable. If you run through all the repos and add punctuation or fix types in the comments it's not really valuable to the package. You should start by reading up on the [Hacktoberfest quality standards](https://hacktoberfest.digitalocean.com/details/#quality), but if you are in doubt whether it counts for Umbraco, feel free to reach out to packages@umbraco.com!

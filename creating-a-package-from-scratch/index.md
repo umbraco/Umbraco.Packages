@@ -5,12 +5,13 @@
 ## Agenda
 
 - Prerequisites
-- Creating a testsite locally
-- Creating a package from the backoffice
-- App_Plugin extensions
-- Pushing to Github
-- Creating a package on Our
-- Using UmbPack 
+- Exercise 1: Creating a testsite locally
+- Exercise 2: Creating a package from the backoffice
+- Exercise 3: Creating a draft package on Our
+- Exercise 4: Pushing your package to Github
+- Exercise 5: Pack up your package locally using UmbPack 
+- Exercise 6: Pushing your package to Our using UmbPack
+- Exercise 7: Deploy your package using Github Actions
 
 ## Prerequisites
 
@@ -24,7 +25,7 @@ To run this workshop you will need the following:
 
 If you are in doubt about whether you have this then check out the [setting up][set-up] document and run through the steps.
 
-## Creating a testsite locally
+## Exercise 1: Creating a testsite locally
 
 First step when trying to create a package would be to add something to an Umbraco site. So let's set up a site using the Package Templates tool.
 
@@ -48,13 +49,13 @@ Run the site from VS/Rider and go through the installer - you can install with o
 
 Once the site is running we are ready to look into creating a package! 
 
-## App_Plugins extensions
+### App_Plugins extensions
 
 One of the most common types of packages are based on App_Plugins extensions, these extensions are ways to implement custom made versions of backoffice elements. For example dashboards, property editors, content apps, sections, trees, healthcheks, etc.
 
 Other than these backoffice extensions you can also include any c# code you wish in a packages, or any other type of file. But first let's look at some of the common backoffice extensions!
 
-### Dashboard
+#### Dashboard
 
 You may have noticed earlier when you created the package site that you added a `-d` option, that has already set up a starting point for creating a dashboard for you. If you look in the PackageWorkshop class library:
 
@@ -76,7 +77,7 @@ The cool thing here is that since it is a watch command, any small changes you m
 
 ![Custom dashboard][dashboard]
 
-## Creating a package from the backoffice
+## Exercise 2: Creating a package from the backoffice
 
 So far we haven't actually done anything related to packages. Lots of people add extensions to their sites without ever packaging them up and sharing with others. So let's look at how we can share our brand new dashboard with others!
 
@@ -98,7 +99,7 @@ We can also skip the Package Actions, which is a way to run some code when insta
 
 Now click create in the bottom right, and after that you can download the zip package.
 
-## Understanding the package structure
+### Understanding the package structure
 
 If you peek into the zip file of the package we created you will see that all of the files you had are there, but they are not in folders anymore, they are all added in the root of the zip. There is also a new file called `package.xml`:
 
@@ -195,7 +196,7 @@ You don't have to worry too much about guid and orgName, they are just reference
 
 Both would have the same name and be thrown in the root of the zip file - this would cause a conflict and Umbraco would rename them to randomly generated names. These names would correspond to the `guid` property, while the `orgName` and `orgPath` would make up the original names - and would be where the package would place and name the file when being intalled.
 
-## Creating a package on Our
+## Exercise 3: Creating a draft package on Our
 
 At this point we have a complete package and can push it to [Our Umbraco](https://our.umbraco.com/packages/) which is the where the Umbraco package repository is. The packages on that website are also the ones that are featured in the package section of the backoffice.
 
@@ -211,7 +212,7 @@ Note: If you don't intend for people to use the package (as in this workshop), t
 
 Now your package is on Our, and if the "Go live" button is clicked it is visible for all to see! Next step is to make it a bit simpler to deploy updates to the package. It is perfectly fine to log in here, and upload a new version each time. The next steps will show an easier way though..
 
-## Pushing to Github
+## Exercise 4: Pushing your package to Github
 
 If you are creating a package in order to share it with others it is a great idea to also share the source code. It is the open source way!
 
@@ -247,7 +248,11 @@ Now you have it all on Github:
 
 Final step is to set it up to automatically package new changes and deploy them to Our.
 
-## Using UmbPack 
+## Exercise 5: Pack up your package locally using UmbPack 
+
+## Exercise 6: Pushing your package to Our using UmbPack
+
+## Exercise 7: Deploy your package using Github Actions
 
 If you think back to the beginning when we set up our sites using the Package Templates you may remember me saying that by default you get a Github action installed as well.
 

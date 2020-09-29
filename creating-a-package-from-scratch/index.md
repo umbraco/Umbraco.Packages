@@ -246,11 +246,36 @@ Now you have it all on Github:
 
 ![Github repo][github-repo]
 
-Final step is to set it up to automatically package new changes and deploy them to Our.
-
 ## Exercise 5: Pack up your package locally using UmbPack 
 
+At this point you know how to create a package from the backoffice, upload it to Our and push your changes to Github. That's all it takes to create and maintain a package, if you want to make changes and push a new version you can sync your code to Github, go to Our and upload a new zip version and then set that to the current version while also archiving the previous one.
+
+However, while working this way is definitely possible, and will work for everyone it is pretty time consuming and requires you to do a lot of things in different places. So let's make it a bit easier!
+
+Instead of going to the Backoffice and creating or updating your package from the package section each time, you can use the UmbPack tool to make smaller changes.
+
+**Note**: Any changes to Umbraco content and schema is a lot easier to do from the backoffice, but if it is file based UmbPack is quicker.
+
+If you have a look back in your your solution you will notice there is an almost empty package.xml file in the root:
+
+![Package.xml file in root][packagexml]
+
+If you open this package.xml file you will notice it has some default values in it, the only new part is under files:
+
+```xml
+  <files>
+    <folder path="src/Package.Workshop/App_Plugins/Package.Workshop" orgPath="App_Plugins/Package.Workshop" />
+    <file path="src/Package.Workshop/bin/release/Package.Workshop.dll" orgPath="bin/Package.Workshop.dll" />
+  </files>
+```
+
+Here you may notice that compared to your backoffice created package.xml it has not only file elements, but also a folder element.
+
 ## Exercise 6: Pushing your package to Our using UmbPack
+
+### Creating an Our API key
+
+### Pushing to Our with UmbPack
 
 ## Exercise 7: Deploy your package using Github Actions
 
@@ -261,7 +286,7 @@ If you check out the ~/.github/workflows folder in your solution, you will see t
 The build.yml file contains several things, let's do a quick overview:
 
 Line 14-17:
-```
+```yml
 on:
   push:
     tags:
@@ -299,3 +324,4 @@ This won't work yet, but before moving on and getting it to work let's have a lo
 [zip-files]: images/zip-files.png "zip-files"
 [package-overview]: images/package-overview.png "Package overview"
 [github-repo]: images/github-repo.png "Github repo"
+[packagexml]: images/packagexml.png "Package.xml file in root"

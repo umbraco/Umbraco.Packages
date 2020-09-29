@@ -65,7 +65,7 @@ However since these files are not included in the .Site project you can't see th
 
 ```
 npm install
-
+npm install gulp -g
 gulp
 ```
 

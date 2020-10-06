@@ -3,6 +3,7 @@
 Please add your repo to the list below. Please make sure you link to a filtered list of issues you want help on.
 
 - [Articulate](https://github.com/Shazwazza/Articulate/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+- [Awesome Umbraco](https://github.com/umbraco-community/awesome-umbraco/labels/hacktoberfest)
 - [Community-Website-StarterKit](https://github.com/TimGeyssens/Umbraco-v8-Community-Website-StarterKit/discussions)
 - [Content Node Icons](https://github.com/markadrake/U8SK.ContentNodeIcons/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)
 - [Contentment](https://github.com/leekelleher/umbraco-contentment/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)

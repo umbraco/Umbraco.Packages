@@ -79,7 +79,7 @@ The cool thing here is that since it is a watch command, any small changes you m
 
 ## Exercise 2: Creating a package from the backoffice
 
-So far we haven't actually done anything related to packages. Lots of people add extensions to their sites without ever packaging them up and sharing with others. So let's look at how we can share our brand new dashboard with others!
+So far we haven't even done anything related to packages. Lots of people add extensions to their sites without ever packaging them up and sharing with others. So let's look at how we can share our brand new dashboard with others!
 
 First things first - let's package up the files we want to share, and then take a short look at the package file structure.
 
@@ -101,7 +101,7 @@ Now click create in the bottom right, and after that you can download the zip pa
 
 ### Understanding the package structure
 
-If you peek into the zip file of the package we created you will see that all of the files you had are there, but they are not in folders anymore, they are all added in the root of the zip. There is also a new file called `package.xml`:
+If you peek into the zip file of the package we created you will see that all of the files you had are there. But they are not in folders anymore, they are all added in the root of the zip. There is also a new file called `package.xml`:
 
 ![zip-files][zip-files]
 
@@ -146,7 +146,8 @@ The `package.xml` file is the one containing all package metadata, and the file 
 
 This is the format it has - with the files element edited out for now. You can see all the info we added in the package creator in the backoffice is here under the `<info>` element. It also has elements to add DocumentTypes, and many other Umbraco schema items, as well as Package Actions under the `<Actions />` element.
 
-A package.xml file can be super long if you include content and schema elements as they will all be in this one file, but since we haven't done so we don't have to worry about it - let's take a look at how files are included:
+A package.xml file can be super long if you include content and schema elements as they will all be in this one file, but since we haven't done so we don't have to worry about it. 
+Let's take a look at how files are included:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -189,7 +190,7 @@ A package.xml file can be super long if you include content and schema elements 
 
 So here you will notice that while we only added the top level folder in the backoffice, it went through that folder and added a `<file>` element for every file found within that folder. And each file has 3 properties - `guid`, `orgPath` & `orgName`. 
 
-You don't have to worry too much about guid and orgName, they are just references to the file name. Umbraco will automatically rename the file if there are conflicts, since they are stored in a flat structure it is quite likely, fx lets say you had these two files in your package:
+You don't have to worry too much about guid and orgName, they are references to the file name. Umbraco will automatically rename the file if there are conflicts, since they are stored in a flat structure it is quite likely, fx lets say you had these two files in your package:
 
 ~/App_Plugins/PackageWorkshop/Dashboard/main.css
 ~/App_Plugins/PackageWorkshop/ContentApp/main.css
@@ -248,7 +249,14 @@ Now you have it all on Github:
 
 ## Exercise 5: Pack up your package locally using UmbPack 
 
-At this point you know how to create a package from the backoffice, upload it to Our and push your changes to Github. That's all it takes to create and maintain a package, if you want to make changes and push a new version you can sync your code to Github, go to Our and upload a new zip version and then set that to the current version while also archiving the previous one.
+At this point you know how to create a package from the backoffice, upload it to Our and push your changes to Github. That's what it takes to create and maintain a package. 
+
+If you want to make changes and push a new version you can do these steps:
+
+- Sync your code to Github
+- Go to Our and upload a new zip version
+- Set that to the current version
+- Optionally archive the previous one
 
 However, while working this way is definitely possible, and will work for everyone it is pretty time consuming and requires you to do a lot of things in different places. So let's make it a bit easier!
 
@@ -281,7 +289,9 @@ Here you may notice that compared to your backoffice created package.xml it has 
 
 If you think back to the beginning when we set up our sites using the Package Templates you may remember me saying that by default you get a Github action installed as well.
 
-If you check out the ~/.github/workflows folder in your solution, you will see there is a readme file and a build.yml file. The build.yml file is used by Github actions, which will perform some tasks for you when certain criteria are met. If you never worked with continuous integration and deployment (CI/CD) before, then this may seem like magic, but we are using a very simple version in this example.
+If you check out the ~/.github/workflows folder in your solution, you will see there is a readme file and a build.yml file. 
+
+The build.yml file is used by Github actions, which will perform some tasks for you when certain criteria are met. If you never worked with continuous integration and deployment (CI/CD) before, then this may seem like magic - but don't worry we will run through the commands!
 
 The build.yml file contains several things, let's do a quick overview:
 
@@ -295,7 +305,7 @@ on:
 
 This means that when you push a new tag called `release/*` it will run the action, and only in that case.
 
-The action that it actually performs is what is under `jobs:build:steps`, there is a step that uses our Tool UmbPack to create the package based on the package.xml file explained earlier, it does what the Backoffice download did but without ever having to open Umbraco!
+The action that it performs is what is under `jobs:build:steps`. There is a step that uses UmbPack to create the package based on the package.xml file explained earlier, it does what the backoffice download did but without ever having to open Umbraco!
 
 ```yml
 - name: Create Umbraco package file

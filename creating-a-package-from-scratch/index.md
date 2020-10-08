@@ -277,7 +277,58 @@ If you open this package.xml file you will notice it has some default values in 
   </files>
 ```
 
-Here you may notice that compared to your backoffice created package.xml it has not only file elements, but also a folder element.
+Here you may notice that compared to your backoffice created package.xml it has not only file elements, but also a folder element. The folder element is not part of the regular package schema, and something we've added in UmbPack which works with the `umbpack pack` command where it runs through the folder and adds each file within it in the final zip.
+
+So the xml above will turn into this which is compatible with the Umbraco package installer, and is exactly like what you got in Exercise 2 when creating the package from the backoffice:
+
+```xml
+<files>
+  <file>
+    <guid>Package.Workshop.dll</guid>
+    <orgPath>/bin</orgPath>
+    <orgName>Package.Workshop.dll</orgName>
+  </file>
+  <file>
+    <guid>dashboard.html</guid>
+    <orgPath>/App_Plugins/Package.Workshop/Dashboard</orgPath>
+    <orgName>dashboard.html</orgName>
+  </file>
+  <file>
+    <guid>dashboardController.js</guid>
+    <orgPath>/App_Plugins/Package.Workshop/Dashboard</orgPath>
+    <orgName>dashboardController.js</orgName>
+  </file>
+  <file>
+    <guid>dashboardService.js</guid>
+    <orgPath>/App_Plugins/Package.Workshop/Dashboard</orgPath>
+    <orgName>dashboardService.js</orgName>
+  </file>
+  <file>
+    <guid>package.manifest</guid>
+    <orgPath>/App_Plugins/Package.Workshop/Dashboard</orgPath>
+    <orgName>package.manifest</orgName>
+  </file>
+  <file>
+    <guid>en.xml</guid>
+    <orgPath>/App_Plugins/Package.Workshop/Dashboard/Lang</orgPath>
+    <orgName>en.xml</orgName>
+  </file>
+</files>
+```
+
+Before we try it out using UmbPack, try to run this command in the root of your site:
+
+`umbpack pack -h`
+
+The commandline tool will tell you all the options you have when packing up your package. You can find much more in-depth explanation of the options in the [UmbPack documentation][umbpack-pack].
+
+For now we don't need to worry about the output directory option, we will let UmbPack save it in the current folder. Likewise with the name and version override, we will let UmbPack use the name and version we specified in the package.xml file. For the package.xml path we will specify the one in the root we had a look at right before this, that points to both the dll file and the App_Plugins folder in the website project.
+
+`umbpack pack .\package.xml`
+
+And now we have a zipped version of our package with any new additions in App_Plugins automatically added and listed in the package.xml of the zip. Now you can make changes and run the above command to have an updated version of the package within seconds!
+
+Next up - let's push this package update to Our from the commandline!
 
 ## Exercise 6: Pushing your package to Our using UmbPack
 
@@ -335,3 +386,4 @@ This won't work yet, but before moving on and getting it to work let's have a lo
 [package-overview]: images/package-overview.png "Package overview"
 [github-repo]: images/github-repo.png "Github repo"
 [packagexml]: images/packagexml.png "Package.xml file in root"
+[umbpack-pack]: https://our.umbraco.com/documentation/Extending/Packages/UmbPack/#pack-options "Pack options documentation"

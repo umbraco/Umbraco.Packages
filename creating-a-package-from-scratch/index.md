@@ -203,7 +203,7 @@ At this point we have a complete package and can push it to [Our Umbraco](https:
 
 To create a package on Our, you first need an account on there and the account needs to have a certain level of karma - which can be gained by responding to forum posts.
 
-Once you log in you can go to your [package overview](https://our.umbraco.com/member/profile/packages/) which should look a bit like this:
+Once you log in you can go to your [package overview][member-package-overview] which should look a bit like this:
 
 ![Package overview][package-overview]
 
@@ -318,13 +318,13 @@ So the xml above will turn into this which is compatible with the Umbraco packag
 
 Before we try it out using UmbPack, try to run this command in the root of your site:
 
-`umbpack pack -h`
+```umbpack pack -h```
 
 The commandline tool will tell you all the options you have when packing up your package. You can find much more in-depth explanation of the options in the [UmbPack documentation][umbpack-pack].
 
 For now we don't need to worry about the output directory option, we will let UmbPack save it in the current folder. Likewise with the name and version override, we will let UmbPack use the name and version we specified in the package.xml file. For the package.xml path we will specify the one in the root we had a look at right before this, that points to both the dll file and the App_Plugins folder in the website project.
 
-`umbpack pack .\package.xml`
+```umbpack pack .\package.xml```
 
 And now we have a zipped version of our package with any new additions in App_Plugins automatically added and listed in the package.xml of the zip. Now you can make changes and run the above command to have an updated version of the package within seconds!
 
@@ -332,13 +332,44 @@ Next up - let's push this package update to Our from the commandline!
 
 ## Exercise 6: Pushing your package to Our using UmbPack
 
+To push a package update to Our with UmbPack we need to use the `push` command, so let's have a quick look at the options for that by running:
+
+```umbpack push -h```
+
+You will see there are 2 nessecary options, an API key and a path to the package zip. Then it is also possible for you to specify the Umbraco versions and dotnet version the package is compatible with, and also to archive old packages and set this as the new current package.
+
+In short - similar options to what you can set on the package upload section on Our when uploading a package:
+
+![Our package data][our-pkg-data]
+
+So before we can try this out, let's go to Our and create an API key!
+
 ### Creating an Our API key
+
+If you had back to Our Umbraco and visit the [package overview][member-package-overview], then you will notice that there is a button under your package that says "API Keys". 
+Each package api key is tied to that specific package, if you visit the page then you can create keys with a name you can use to differentiate the keys. Once you make a key it will show once, as soon as you refresh or navigate away the key will be gone and you'll have to make a new one if you lose it.
+
+Once you created your key, make sure to copy and paste it somewhere. We will need to use it a few times in the coming exercises - remember if you lose it you will have to make a new one!
 
 ### Pushing to Our with UmbPack
 
+Now that we have an API key we can try to push our package update to Our Umbraco. This can be done like this:
+
+```umbpack push .\PackageWorkshopDashboard_1.0.0.zip -k [Api key here]```
+
+> **Note**: If a package with the same name already exists it may give an error. In that case you can run `umbpack pack .\package.xml -v 1.0.1` to create a new version of the package then push it with the above command after editing the path to the new package.
+
+An important thing to note with the push command here is that it sets some defalt values. If not specified otherwise it will default to saying your package is compatible with Umbraco v8.5.0, Dotnet 4.7.2 and it's to be set as the new "current" package on Our.
+
+You can edit all of these defaults, and also specify older versions of your package to be archived when pushing new versions. You can read much more about the push options in the [Umbpack documentation][umbpack-push].
+
+So at this point we can work on our package locally, build a new version within seconds by running the pack command and then deploy it to Our using the push command!
+
+Not easy enough for you? Let's try automating this entire thing with Github actions then!
+
 ## Exercise 7: Deploy your package using Github Actions
 
-If you think back to the beginning when we set up our sites using the Package Templates you may remember me saying that by default you get a Github action installed as well.
+If you think back to the beginning when we set up our sites using the Package Templates you may remember that by default you get a Github action installed as well.
 
 If you check out the ~/.github/workflows folder in your solution, you will see there is a readme file and a build.yml file. 
 
@@ -370,9 +401,6 @@ Below it you can add another step:
   run: umbpack push -k ${{ secrets.UMBRACO_DEPLOY_KEY }} ${{ env.Output }}\PackageWorkshopDashboard_${{ steps.get_tag.outputs.VERSION }}.zip
 ```
 
-This won't work yet, but before moving on and getting it to work let's have a look at what UmbPack can do for you!
-
-
 
 <!-- Image and link sources -->
 [team-logo]: images/U_Package_team.png "Package team logo"
@@ -387,3 +415,6 @@ This won't work yet, but before moving on and getting it to work let's have a lo
 [github-repo]: images/github-repo.png "Github repo"
 [packagexml]: images/packagexml.png "Package.xml file in root"
 [umbpack-pack]: https://our.umbraco.com/documentation/Extending/Packages/UmbPack/#pack-options "Pack options documentation"
+[our-pkg-data]: images/our-package-data.png "Our package metadata"
+[member-package-overview]: https://our.umbraco.com/member/profile/packages/ "Our member package overview"
+[umbpack-push]: https://our.umbraco.com/documentation/Extending/Packages/UmbPack/#the-push-command "Push options documentation"

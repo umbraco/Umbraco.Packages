@@ -12,6 +12,14 @@ Example: [Articulate help wanted issues](https://github.com/Shazwazza/Articulate
 
 For the issue to be considered valid it must be a valuable contribution required, which is up to the discretion of the package team and will be based on the [Hacktoberfest quality standards](https://hacktoberfest.digitalocean.com/details/#quality).
 
+If you haven't heard already... the rules for the official Hacktoberfest were changed early in October in an attempt to stop maintainers being overwhelmed by spammers 😢. If you want people's contributions to your projects to be counted you need to:
+
+- Classify your repositories with the `hacktoberfest` topic
+- Apply `hacktoberfest-accepted` labels to pull requests that you accept
+
+Check out the [Hacktoberfest update](https://hacktoberfest.digitalocean.com/hacktoberfest-update) for further information and guidance on how to do this.
+
+
 ## For contributors
 
 If you are interested in contributing to an Umbraco package, please check out the repos on the [Hacktoberfest package repo list](hacktoberfest-package-repos.md) list - and make sure to read the contributing guidelines of the repo first!

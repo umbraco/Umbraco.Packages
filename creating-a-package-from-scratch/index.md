@@ -44,21 +44,15 @@ dotnet new umbraco-v8-package -n PackageWorkshop -d
 
 This will create a new package called `PackageWorkshop`, and add a custom Dashboard. By default you will also get a Github Action added that we will return to later.
 
-Afer running you will have a folder called `PackageWorkshop`, inside that you will have your site and solution files. So try to open it in Visual Studio or Rider by opening the `PackageWorkshop.sln` file.
+After running you will have a folder called `PackageWorkshop`, inside that you will have your site and solution files. So try to open it in Visual Studio or Rider by opening the `PackageWorkshop.sln` file.
 
-Run the site from VS/Rider and go through the installer - you can install with or without starter kit, not that important.
+Start the site from VS/Rider (CTRL + F5) and go through the installer - you can install with or without starter kit, not that important.
 
 Once the site is running we are ready to look into creating a package! 
 
-### App_Plugins extensions
+### Dashboard
 
-One of the most common types of packages are based on App_Plugins extensions, these extensions are ways to implement custom made versions of backoffice elements. For example dashboards, property editors, content apps, sections, trees, healthcheks, etc.
-
-Other than these backoffice extensions you can also include any c# code you wish in a packages, or any other type of file. But first let's look at some of the common backoffice extensions!
-
-#### Dashboard
-
-You may have noticed earlier when you created the package site that you added a `-d` option, that has already set up a starting point for creating a dashboard for you. If you look in the PackageWorkshop class library:
+You may have noticed earlier when you created the package site that you added a `-d` option, that has already set up a starting point for creating a dashboard for you. If you look in the PackageWorkshop class library you'll find these files:
 
 ![PackageWorkshop class library][class-library]
 
@@ -74,25 +68,23 @@ Then you will get a message that it is watching the App Plugins folder, and in y
 
 ![Result of the gulp command][gulp-watch]
 
-The cool thing here is that since it is a watch command, any small changes you may make will trigger a new copy so you can immediately test. Finally let's restart the site so we can see the dashboard in the Content section!
+The cool thing here is that since it is a watch command, any small changes you may make will trigger a new copy so you can immediately test. Finally let's restart the site (add a space to web.config and save) so we can see the dashboard in the Content section!
 
 ![Custom dashboard][dashboard]
 
+Good job, you've created your first dashboard!
+
 ## Exercise 2: Creating a package from the backoffice
 
-So far we haven't even done anything related to packages. Lots of people add extensions to their sites without ever packaging them up and sharing with others. So let's look at how we can share our brand new dashboard with others!
-
-First things first - let's package up the files we want to share, and then take a short look at the package file structure.
-
-First step is to go to the packages section in the backoffice, then click the `Created` tab in the top right corner of the section. Inside this section there is a `Create package` button - click that.
+To create a package, the first step is to go to the packages section in the backoffice, then click the `Created` tab in the top right corner of the section. Inside this section there is a `Create package` button - click that.
 
 Now fill out the name at the top, and then all the info in the Package Properties, an example could be:
 
 ![Example package info][package-info]
 
-Next section is the Package Content - we are going to leave it empty for this package, but this is where you can include doc types, content nodes, etc. Very useful for fx starter kit packages that want to include some starter content.
+The second section is the Package Content - we are going to leave it empty for this package, but this is where you can include doc types, content nodes, etc. Very useful for fx starter kit packages that want to include some starter content.
 
-The next section is Package Files, here under "Path to file" we will find the package folder inside App_Plugins and select it, additionally the ~/bin/PackageWorkshop.dll file (containing the controllers from the class library).
+The third section is Package Files, here under "Path to file" we will find the package folder inside App_Plugins and select it, additionally the ~/bin/PackageWorkshop.dll file (containing the controllers from the class library).
 
 ![Example package files][package-files]
 
@@ -100,103 +92,7 @@ We can also skip the Package Actions, which is a way to run some code when insta
 
 Now click create in the bottom right, and after that you can download the zip package.
 
-### Understanding the package structure
-
-If you peek into the zip file of the package we created you will see that all of the files you had are there. But they are not in folders anymore, they are all added in the root of the zip. There is also a new file called `package.xml`:
-
-![zip-files][zip-files]
-
-The `package.xml` file is the one containing all package metadata, and the file references that ensures Umbraco knows where to place the files when installing a package.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<umbPackage>
-  <files>
-    ...
-  </files>
-  <info>
-    <package>
-      <name>PackageWorkshopDashboard</name>
-      <version>1.0.0</version>
-      <iconUrl></iconUrl>
-      <license url="http://opensource.org/licenses/MIT">MIT License</license>
-      <url>https://umbraco.com</url>
-      <requirements type="Strict">
-        <major>8</major>
-        <minor>6</minor>
-        <patch>2</patch>
-      </requirements>
-    </package>
-    <author>
-      <name>Jesper Mayntzhusen</name>
-      <website>https://github.com/jmayntzhusen</website>
-    </author>
-    <contributors></contributors>
-    <readme><![CDATA[Dashboard that shows the current server time and date, intended for use in the Package Team package workshop!]]></readme>
-  </info>
-  <DocumentTypes />
-  <Templates />
-  <Stylesheets />
-  <Macros />
-  <DictionaryItems />
-  <Languages />
-  <DataTypes />
-  <Actions />
-</umbPackage>
-```
-
-This is the format it has - with the files element edited out for now. You can see all the info we added in the package creator in the backoffice is here under the `<info>` element. It also has elements to add DocumentTypes, and many other Umbraco schema items, as well as Package Actions under the `<Actions />` element.
-
-A package.xml file can be super long if you include content and schema elements as they will all be in this one file, but since we haven't done so we don't have to worry about it. 
-Let's take a look at how files are included:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<umbPackage>
-  <files>
-    <file>
-      <guid>dashboard.html</guid>
-      <orgPath>~/App_Plugins/PackageWorkshop/Dashboard</orgPath>
-      <orgName>dashboard.html</orgName>
-    </file>
-    <file>
-      <guid>dashboardController.js</guid>
-      <orgPath>~/App_Plugins/PackageWorkshop/Dashboard</orgPath>
-      <orgName>dashboardController.js</orgName>
-    </file>
-    <file>
-      <guid>dashboardService.js</guid>
-      <orgPath>~/App_Plugins/PackageWorkshop/Dashboard</orgPath>
-      <orgName>dashboardService.js</orgName>
-    </file>
-    <file>
-      <guid>package.manifest</guid>
-      <orgPath>~/App_Plugins/PackageWorkshop/Dashboard</orgPath>
-      <orgName>package.manifest</orgName>
-    </file>
-    <file>
-      <guid>en.xml</guid>
-      <orgPath>~/App_Plugins/PackageWorkshop/Dashboard/Lang</orgPath>
-      <orgName>en.xml</orgName>
-    </file>
-    <file>
-      <guid>PackageWorkshop.dll</guid>
-      <orgPath>~/bin</orgPath>
-      <orgName>PackageWorkshop.dll</orgName>
-    </file>
-  </files>
-  ...
-</umbPackage>
-```
-
-So here you will notice that while we only added the top level folder in the backoffice, it went through that folder and added a `<file>` element for every file found within that folder. And each file has 3 properties - `guid`, `orgPath` & `orgName`. 
-
-You don't have to worry too much about guid and orgName, they are references to the file name. Umbraco will automatically rename the file if there are conflicts, since they are stored in a flat structure it is quite likely, fx lets say you had these two files in your package:
-
-~/App_Plugins/PackageWorkshop/Dashboard/main.css
-~/App_Plugins/PackageWorkshop/ContentApp/main.css
-
-Both would have the same name and be thrown in the root of the zip file - this would cause a conflict and Umbraco would rename them to randomly generated names. These names would correspond to the `guid` property, while the `orgName` and `orgPath` would make up the original names - and would be where the package would place and name the file when being intalled.
+Wohoo! You've already created your own package at this point!
 
 ## Exercise 3: Creating a draft package on Our
 
@@ -210,13 +106,13 @@ Once you log in you can go to your [package overview][member-package-overview] w
 
 Click the "Add package" button and fill out all the information, upload the package and save in the end.
 
-Note: If you don't intend for people to use the package (as in this workshop), then please don't click the "Go live" button in the end.
+>Note: If you don't intend for people to use the package (as in this workshop), then please don't click the "Go live" button in the end.
 
 Now your package is on Our, and if the "Go live" button is clicked it is visible for all to see! Next step is to make it a bit simpler to deploy updates to the package. It is perfectly fine to log in here, and upload a new version each time. The next steps will show an easier way though..
 
 ## Exercise 4: Pushing your package to Github
 
-If you are creating a package in order to share it with others it is a great idea to also share the source code. It is the open source way!
+If you are creating a package in order to share it with others it is a great idea to also share the source code. It is the open source way ♥
 
 To share it, and make it easier to manage and deploy updates we will set up a Github repository for the package. This workshop assumes you know what Github is, and that you have an account. 
 
@@ -251,73 +147,6 @@ Now you have it all on Github:
 
 ## Exercise 5: Pack up your package locally using UmbPack 
 
-At this point you know how to create a package from the backoffice, upload it to Our and push your changes to Github. That's what it takes to create and maintain a package. 
-
-If you want to make changes and push a new version you can do these steps:
-
-- Sync your code to Github
-- Go to Our and upload a new zip version
-- Set that to the current version
-- Optionally archive the previous one
-
-However, while working this way is definitely possible, and will work for everyone it is pretty time consuming and requires you to do a lot of things in different places. So let's make it a bit easier!
-
-Instead of going to the Backoffice and creating or updating your package from the package section each time, you can use the UmbPack tool to make smaller changes.
-
-**Note**: Any changes to Umbraco content and schema is a lot easier to do from the backoffice, but if it is file based UmbPack is quicker.
-
-If you have a look back in your your solution you will notice there is an almost empty package.xml file in the root:
-
-![Package.xml file in root][packagexml]
-
-If you open this package.xml file you will notice it has some default values in it, the only new part is under files:
-
-```xml
-  <files>
-    <folder path="src/Package.Workshop/App_Plugins/Package.Workshop" orgPath="App_Plugins/Package.Workshop" />
-    <file path="src/Package.Workshop/bin/release/Package.Workshop.dll" orgPath="bin/Package.Workshop.dll" />
-  </files>
-```
-
-Here you may notice that compared to your backoffice created package.xml it has not only file elements, but also a folder element. The folder element is not part of the regular package schema, and something we've added in UmbPack which works with the `umbpack pack` command where it runs through the folder and adds each file within it in the final zip.
-
-So the xml above will turn into this which is compatible with the Umbraco package installer, and is exactly like what you got in Exercise 2 when creating the package from the backoffice:
-
-```xml
-<files>
-  <file>
-    <guid>Package.Workshop.dll</guid>
-    <orgPath>/bin</orgPath>
-    <orgName>Package.Workshop.dll</orgName>
-  </file>
-  <file>
-    <guid>dashboard.html</guid>
-    <orgPath>/App_Plugins/Package.Workshop/Dashboard</orgPath>
-    <orgName>dashboard.html</orgName>
-  </file>
-  <file>
-    <guid>dashboardController.js</guid>
-    <orgPath>/App_Plugins/Package.Workshop/Dashboard</orgPath>
-    <orgName>dashboardController.js</orgName>
-  </file>
-  <file>
-    <guid>dashboardService.js</guid>
-    <orgPath>/App_Plugins/Package.Workshop/Dashboard</orgPath>
-    <orgName>dashboardService.js</orgName>
-  </file>
-  <file>
-    <guid>package.manifest</guid>
-    <orgPath>/App_Plugins/Package.Workshop/Dashboard</orgPath>
-    <orgName>package.manifest</orgName>
-  </file>
-  <file>
-    <guid>en.xml</guid>
-    <orgPath>/App_Plugins/Package.Workshop/Dashboard/Lang</orgPath>
-    <orgName>en.xml</orgName>
-  </file>
-</files>
-```
-
 Before we try it out using UmbPack, try to run this command in the root of your site:
 
 ```umbpack pack -h```
@@ -349,13 +178,18 @@ So before we can try this out, let's go to Our and create an API key!
 ### Creating an Our API key
 
 If you had back to Our Umbraco and visit the [package overview][member-package-overview], then you will notice that there is a button under your package that says "API Keys". 
+
 Each package api key is tied to that specific package, if you visit the page then you can create keys with a name you can use to differentiate the keys. Once you make a key it will show once, as soon as you refresh or navigate away the key will be gone and you'll have to make a new one if you lose it.
 
 Once you created your key, make sure to copy and paste it somewhere. We will need to use it a few times in the coming exercises - remember if you lose it you will have to make a new one!
 
 ### Pushing to Our with UmbPack
 
-Now that we have an API key we can try to push our package update to Our Umbraco. This can be done like this:
+Now that we have an API key we can try to push our package update to Our Umbraco. First have a look at the push options within UmbPack:
+
+```umbpack push -h```
+
+For now we won't bother with the additional options, but it's good to know what's possible! Let's push the package to Our:
 
 ```umbpack push .\PackageWorkshopDashboard_1.0.0.zip -k [Api key here]```
 
@@ -395,6 +229,7 @@ The action that it performs is what is under `jobs:build:steps`. There is a step
 - name: Create Umbraco package file
   run: UmbPack pack ./package.xml -o ${{ env.OUTPUT }} -v ${{ steps.get_version.outputs.VERSION }}
 ```
+
 >Note: It sets the version of the package to be what we've set in the release tag based on a previous step.
 
 Below it there is another step to push the package to Our, which again is like what we did locally - except now we add the API key as a Github secret so it's not public to everyone!

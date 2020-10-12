@@ -12,6 +12,7 @@
 - Exercise 5: Pack up your package locally using UmbPack 
 - Exercise 6: Pushing your package to Our using UmbPack
 - Exercise 7: Deploy your package using Github Actions
+- Bonus exercise: Archive older versions on push
 
 ## Prerequisites
 
@@ -223,14 +224,15 @@ Create a fresh repo, with no readme, gitignore nor based on a template. On the s
 
 ```
 git remote add origin https://github.com/jmayntzhusen/package-workshop.git
-git branch -M master
-git push -u origin master
+git branch -M main
+git push -u origin main
 ```
 
 If you jump back to your command line in the folder that has the .sln file and the gitignore, you may notice that there is no git repo by default, so let's create one:
 
 ```
 git init
+git checkout -b main
 git add .
 git commit -m "Initial commit, dashboard package"
 ```
@@ -239,8 +241,8 @@ At this point you have your solution in a local git repository, and we can then 
 
 ```
 git remote add origin https://github.com/jmayntzhusen/package-workshop.git
-git branch -M master
-git push -u origin master
+git branch -M main
+git push -u origin main
 ```
 
 Now you have it all on Github:
@@ -371,7 +373,7 @@ Not easy enough for you? Let's try automating this entire thing with Github acti
 
 If you think back to the beginning when we set up our sites using the Package Templates you may remember that by default you get a Github action installed as well.
 
-If you check out the ~/.github/workflows folder in your solution, you will see there is a readme file and a build.yml file. 
+If you check out the `~/.github/workflows` folder in your solution, you will see there is a readme file and a build.yml file. 
 
 The build.yml file is used by Github actions, which will perform some tasks for you when certain criteria are met. If you never worked with continuous integration and deployment (CI/CD) before, then this may seem like magic - but don't worry we will run through the commands!
 
@@ -387,19 +389,73 @@ on:
 
 This means that when you push a new tag called `release/*` it will run the action, and only in that case.
 
-The action that it performs is what is under `jobs:build:steps`. There is a step that uses UmbPack to create the package based on the package.xml file explained earlier, it does what the backoffice download did but without ever having to open Umbraco!
+The action that it performs is what is under `jobs:build:steps`. There is a step that uses UmbPack to create the package using the `pack` command, like we did locally on our machines!
 
 ```yml
 - name: Create Umbraco package file
   run: UmbPack pack ./package.xml -o ${{ env.OUTPUT }} -v ${{ steps.get_version.outputs.VERSION }}
 ```
+>Note: It sets the version of the package to be what we've set in the release tag based on a previous step.
 
-Below it you can add another step:
+Below it there is another step to push the package to Our, which again is like what we did locally - except now we add the API key as a Github secret so it's not public to everyone!
+
+![Github secret](images/gh-secret.png)
 
 ```yml
 - name: Push to Our
   run: umbpack push -k ${{ secrets.UMBRACO_DEPLOY_KEY }} ${{ env.Output }}\PackageWorkshopDashboard_${{ steps.get_tag.outputs.VERSION }}.zip
 ```
+
+With these 2 commands and a few previous ones setting up the prerequisite build and nuget tools it is not ready to be fully automated!
+
+Ensure you have set a Github secret with the name `UMBRACO_DEPLOY_KEY` and the value of the key from Our, and then go to your local solution and uncomment the UmbPack push command in the ~/.github/workflows/build.yml file.
+
+Then make sure it is added and committed locally:
+
+```
+git add .
+git commit -m "Enable umbpack push in GH action"
+git push
+```
+
+Your solution and Github repo are now in sync, and the umbpack commands in the Github action are enabled and ready to run. Final step is to create a release tag and push it to Github:
+
+```
+git tag release/1.0.0
+git push origin release/1.0.0
+```
+
+At this point you can go to Github and visit the Action tab to see your Github action run. When it's done successfully you can go to your package overview on Our and see the package there!
+
+## Bonus exercise: Archive older versions on push
+
+If you want to ensure that older versions of your package are archived when you push a new one you can add the archive flag to the push command, a few examples are:
+
+Archiving only the previous current package:
+
+```
+-a current
+```
+
+Archiving all other packages before adding the new one
+
+```
+-a *
+```
+
+Archiving all packages named `DashboardPackage` with a version of 1.2.x and 2.2.x:
+
+```
+-a DashboardPackage_1.2.*, DashboardPackage_2.2.*
+```
+
+In our case we don't expect there to ever be more than 1 "active" version at once, so we'll archive everything else, the final push step will then be:
+
+```yml
+- name: Push to Our
+  run: umbpack push -k ${{ secrets.UMBRACO_DEPLOY_KEY }} ${{ env.Output }}\PackageWorkshopDashboard_${{ steps.get_tag.outputs.VERSION }}.zip -a *
+```
+
 
 
 <!-- Image and link sources -->

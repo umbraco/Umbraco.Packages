@@ -54,24 +54,19 @@ If it tells you umbpack is an unknown command you can install it by running the 
 dotnet tool install --global Umbraco.Tools.Packages --version "0.9.*"
 ```
 
-**NOTE**: If it says dotnet is an unknown command then you will need to install the [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core) first.
+>**NOTE**: If it says dotnet is an unknown command then you will need to install the [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core) first.
 
 ## Umbraco Package templates installed
 
 You can check whether the Umbraco package templates are installed by running the following command:
 
 ```
-dotnet new umbraco -l
+dotnet new -u
 ```
 
-It should return a list of templates. You can ensure they are updated by running:
+It will tell you what version of each template package you have installed. If `Umbraco.Tools.Packages.Templates` is not there or is lower than version 0.2.5 then 
+you should update:
 
 ```
-dotnet new --update-apply
-``` 
-
-If they are not installed, you can install the tool by running:
-
-```
-dotnet new -i Umbraco.Tools.Packages.templates
+dotnet new --install Umbraco.Tools.Packages.Templates::0.2.5
 ```

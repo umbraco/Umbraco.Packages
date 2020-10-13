@@ -288,7 +288,10 @@ In our case we don't expect there to ever be more than 1 "active" version at onc
 
 ```yml
 - name: Push to Our
-  run: umbpack push -k ${{ secrets.UMBRACO_DEPLOY_KEY }} ${{ env.Output }}\PackageWorkshopDashboard_${{ steps.get_tag.outputs.VERSION }}.zip -a *
+  run: umbpack push 
+    -k ${{ secrets.UMBRACO_DEPLOY_KEY }} 
+    ${{ env.Output }}\PackageWorkshopDashboard_${{ steps.get_tag.outputs.VERSION }}.zip 
+    -a *
 ```
 
 

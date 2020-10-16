@@ -8,7 +8,7 @@ To run this workshop you will need the following:
 - Umbpack installed
 - Umbraco Package templates installed
 
-Below we will run through them one by on and show you how to verify it is installed and where to get them:
+Below we will run through them one by one and show you how to verify it is installed and where to get them:
 
 ## Be able to run an Umbraco site locally
 

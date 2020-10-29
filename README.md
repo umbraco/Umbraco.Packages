@@ -1,8 +1,8 @@
 # Umbraco.Packages
 
-Welcome to the GitHub home of the Umbraco Package team!
+Welcome to the GitHub home of the Umbraco Package team. If you want to read about the team's objectives and its current members, visit [the team page on the Our website](https://our.umbraco.com/get-involved/the-package-team/).
 
-The issue tracker is used for tracking Package Team tasks, but is open for community involvement. It is also used for managing bugs and feature requests relating to the packages section of the [Our website](https://github.com/umbraco/OurUmbraco).
+This issue tracker is used for tracking Package Team tasks, but is open for community involvement. It is also used for managing bugs and feature requests relating to the packages section of the [Our website](https://github.com/umbraco/OurUmbraco).
 
 The Package Team also maintain:
 

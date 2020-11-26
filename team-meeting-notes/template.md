@@ -1,20 +1,17 @@
 # Package team meeting [DATE]
 
-Attended by Dave, David, Jesper, Kevin, Lotte, Nik & Richard
+Attendees: Dave, David, Jesper, Kevin, Lotte, Nik & Richard
+
+Notetaker: 
 
 ## Agenda
 
-- Who takes notes
 - Status on Umbpack
 - Status on Package Templates
 - Status on Umbraco.Packages issues
 - Status on UI Examples
 - Any other business
 - Tasks for next time
-
-## Who takes notes
-
-Todays notetaker is 
 
 ## Status on Umbpack
 
@@ -34,16 +31,16 @@ Todays notetaker is
 
 ## Any other business
 
-
+Next meeting is on [DATE].
 
 ## Tasks for next time
 
-For next time we will work on the following:
+For next time we aim to have made progress on:
 
-Dave: 
-David: 
-Jesper: 
-Kevin: 
-Lotte: 
-Nik: 
-Richard: 
+* Dave
+* David
+* Jesper
+* Kevin 
+* Lotte 
+* Nik
+* Richard

@@ -1,7 +1,6 @@
 # Package team meeting [DATE]
 
-Attended by Dave
-David, Jesper, Kevin, Lotte, Nik & Richard
+Attended by Dave, David, Jesper, Kevin, Lotte, Nik & Richard
 
 ## Agenda
 

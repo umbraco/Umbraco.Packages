@@ -6,6 +6,7 @@ This issue tracker is used for tracking Package Team tasks, but is open for comm
 
 The Package Team also maintain:
 
+- [UI Examples](https://github.com/umbraco/ui-examples) - a package that adds a 'UI Examples' section to your Umbraco instance with working examples of how to customise the back-office
 - [UmbPack](https://github.com/umbraco/umbpack) - CLI tool to use in CI/CD to upload Umbraco .zip packages
 - [Package Templates](https://github.com/umbraco/Package.templates) - a collection of templates for starting package development
 

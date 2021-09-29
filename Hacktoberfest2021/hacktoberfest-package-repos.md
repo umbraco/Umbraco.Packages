@@ -2,6 +2,7 @@
 
 The packages participating in the 2021 Umbraco Hacktoberfest are:
 
+- [BackOffice Themes](https://github.com/KevinJump/Our.Umbraco.BackOfficeThemes/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 - [uSync](https://github.com/KevinJump/uSync/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 
 

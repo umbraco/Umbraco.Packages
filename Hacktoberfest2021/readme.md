@@ -1,6 +1,8 @@
 # Hacktoberfest 2021 package contributions
 
-For the Umbraco Hacktoberfest celebration of 2021 we are again counting contributions to open source Umbraco packages. However this year there is a limitation: the contribution must be on a v9 package, or helping upgrade a package to support v9.
+For the Umbraco Hacktoberfest celebration of 2021 we are again counting contributions to open source Umbraco packages.
+
+**However this year there is a limitation: the contribution must be on a v9 package, or helping upgrade a package to support v9**.
 
 ## For package maintainers
 

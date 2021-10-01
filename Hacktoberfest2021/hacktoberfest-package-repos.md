@@ -2,6 +2,8 @@
 
 The packages participating in the 2021 Umbraco Hacktoberfest are:
 
+- [FullTextSearch](https://github.com/skttl/umbraco-fulltextsearch8/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+- [DocTypeGridEditor](https://github.com/skttl/umbraco-doc-type-grid-editor/issues?q=is%3Aissue+is%3Aopen+label%3Aup-for-grabs)
 - [BackOffice Themes](https://github.com/KevinJump/Our.Umbraco.BackOfficeThemes/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 - [Fallback Text Property](https://github.com/harry-gordon/wholething-fallback-text-property/labels/help%20wanted)
 - [Umbicosaurus - Umbraco Icon Thesaurus](https://github.com/glombek/umbicosaurus/issues/1)

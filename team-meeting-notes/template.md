@@ -4,7 +4,7 @@ Attendees: Dave, David, Kevin, Lotte, Nik, Richard, Ronald
 Notetaker: 
 
 ## Agenda
-- Status on Packages ecosystem
+- Status on packages ecosystem
 - Status on [UmbPack](https://github.com/umbraco/UmbPack)
 - Status on [Package Templates](https://github.com/umbraco/Package.Templates)
 - Status on [Umbraco.Packages](https://github.com/umbraco/Umbraco.Packages) issues
@@ -12,10 +12,10 @@ Notetaker:
 - Any other business
 - Tasks for next time
 
-## Status on Packages ecosystem
+## Status on packages ecosystem
 
 
-## Status on Umbpack
+## Status on UmbPack
 
 
 ## Status on Package Templates

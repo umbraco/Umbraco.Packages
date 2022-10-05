@@ -6,6 +6,8 @@ These packages are looking for contributions as part of this year's Hacktoberfes
 
 - [Contentment](https://github.com/leekelleher/umbraco-contentment/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 - [uSync](https://github.com/KevinJump/uSync/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+- [BackOfficeThemes](https://github.com/KevinJump/Our.Umbraco.BackOfficeThemes)
+- [MaintenanceMode](https://github.com/KevinJump/Our.Umbraco.MaintenanceMode)
 
 
 ## Want to see your package listed above?

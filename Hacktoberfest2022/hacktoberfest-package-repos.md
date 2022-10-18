@@ -10,7 +10,7 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 - [Maintenance Mode](https://github.com/KevinJump/Our.Umbraco.MaintenanceMode) - a dashboard to quickly switch your site on and off for visitors
 - [Our Umbraco TagHelpers](https://github.com/umbraco-community/Our-Umbraco-TagHelpers) - a community project of C# ASP.NET TagHelpers for Umbraco
 - [uSync](https://github.com/KevinJump/uSync/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) - stores Umbraco database items to disk so you can source control, copy and move between installations
-- [UmbNav](AaronSadlerUK/Our.Umbraco.UmbNav/issues?q=is%3Aissue+is%3Aopen+label%3A"help+wanted") - A drag and drop menu builder for the Umbraco backoffice
+- [UmbNav](https://github.com/AaronSadlerUK/Our.Umbraco.UmbNav/issues?q=is%3Aissue+is%3Aopen+label%3A"help+wanted") - A drag and drop menu builder for the Umbraco backoffice
 
 ## Participating community projects
 

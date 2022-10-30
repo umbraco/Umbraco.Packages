@@ -5,7 +5,7 @@ Creating accessible packages is, a natural extension to accesiblity in an [umbra
 The Umbraco UI components have been built to be accessible and have accesiblity tests built within them. Building the user interface (UI) using these components means is a great start to ensuring the package is accessible.
 In addition any fixes in the components will be pushed through to the packages being created (as long as you rebuild them with the updates).
 
-##Testing
+## Testing
 Accessiblity testing is more than automated testing, and is a specialist skillset. The purpose of this document is to outline some things that can be done to help build accesible packages, it is not a complete list of accessiblity tests that can be performed.
 
 - Build the components using the [Umbraco UI components](https://uui.umbraco.com/) these have accesiblity tests built within them.

@@ -1,5 +1,6 @@
 # Package team meeting [DATE]
-Attendees: Dave, David, Kevin, Lotte, Nik, Richard, Ronald
+
+Attendees: Ronald, Bolette, Callum, Carl, Dennis, Lotte, Mario, Richard 
 
 Notetaker: 
 

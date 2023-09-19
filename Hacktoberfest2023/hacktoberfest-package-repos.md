@@ -1,0 +1,17 @@
+# Hacktoberfest 2023 Umbraco package repo list
+
+## Participating packages
+
+These packages are looking for contributions as part of this year's Umbraco Hacktoberfest:
+
+- [uSync](https://github.com/KevinJump/uSync/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) - stores Umbraco database items to disk so you can source control, copy and move between installations
+
+## Participating community projects
+
+Contributions to these projects are also eligible for this year's Umbraco Hacktoberfest:
+
+- [Package Script Writer](https://github.com/prjseal/Package-Script-Writer) - an online tool to generate install scripts for Umbraco packages
+
+## Want to see your package listed above?
+
+Submit a pull request to this page that adds the name of your package with a link to the filtered list of issues that you would like help with, and a one line description. Packages should be added in alphabetical order by name.

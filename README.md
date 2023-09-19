@@ -1,8 +1,8 @@
 # Umbraco.Packages
 
-Welcome to the GitHub home of the Umbraco Package team. If you want to read about the team's objectives and its current members, visit [the team page on the Our website](https://our.umbraco.com/get-involved/the-package-team/).
+Welcome to the GitHub home of the Umbraco Package team. If you want to read about the team's objectives and its current members, visit [the team page on the community website](https://community.umbraco.com/learn-about-the-community/community-teams/the-package-team/).
 
-This issue tracker is used for tracking Package Team tasks, but is open for community involvement. It is also used for managing bugs and feature requests relating to the packages section of the [Our website](https://github.com/umbraco/OurUmbraco).
+This issue tracker is used for tracking Package Team tasks, but is open for community involvement. 
 
 The Package Team also maintain:
 
@@ -16,7 +16,7 @@ We have the following three issue types you can add to this tracker:
 
 ### Feature request
 
-Use this issue type if you want to submit a feature request that has something to do with Umbraco CMS, Our functionality or package tooling, that you would like the Package Team members and contributors to discuss.
+Use this issue type if you want to submit a feature request that has something to do with Umbraco CMS, Marketplace functionality or package tooling, that you would like the Package Team members and contributors to discuss.
 
 ### Package idea
 

@@ -6,6 +6,8 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 
 - [Contentment](https://github.com/leekelleher/umbraco-contentment/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) - adds a collection of powerful data editors to your Umbraco backoffice
 - [uSync](https://github.com/KevinJump/uSync/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) - stores Umbraco database items to disk so you can source control, copy and move between installations
+- [uCaptcha](https://github.com/UmbHost/Our.Umbraco.Forms.uCaptcha/issues) - Captcha plugin for Umbraco Forms
+- [UmbCheckout](https://github.com/UmbHost/UmbCheckout/issues) - UmbCheckout an eCommerce solution for Umbraco
 
 ## Participating community projects
 

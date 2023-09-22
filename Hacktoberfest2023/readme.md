@@ -34,7 +34,7 @@ To get your repository ready for the official Hacktoberfest:
 
 If you would like contributions to your package to count towards Umbraco's Hacktoberfest:
 
-- Submit a pull request to the [Hacktoberfest 2022 package repo list](hacktoberfest-package-repos.md) that adds your package to the list (in alphabetical order). Ideally add it with a 'deep link' to those issues that you want help with
+- Submit a pull request to the [Hacktoberfest 2023 package repo list](hacktoberfest-package-repos.md) that adds your package to the list (in alphabetical order). Ideally add it with a 'deep link' to those issues that you want help with
 
 For issues to be considered valid they must be valuable contributions, which is up to the discretion of the package team and will be based on the [Hacktoberfest quality standards](https://hacktoberfest.com/participation/#spam), as well as relating to v10 of Umbraco.
 

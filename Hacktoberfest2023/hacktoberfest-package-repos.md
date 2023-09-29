@@ -11,6 +11,7 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 - [UmbCheckout](https://github.com/UmbHost/UmbCheckout/issues) - UmbCheckout an eCommerce solution for Umbraco
 - [UmbNav](https://github.com/AaronSadlerUK/Our.Umbraco.UmbNav/issues) - Drag and drop menu editor for Umbraco V8, V9 and V10+
 - [uSync](https://github.com/KevinJump/uSync/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) - stores Umbraco database items to disk so you can source control, copy and move between installations
+- [uSync.Migrations](https://github.com/Jumoo/uSyncMigrations) - Migrate settings and content between Umbraco versions (and upgrade things like Grid -> Block Grid on the way)
 
 ## Participating community projects
 

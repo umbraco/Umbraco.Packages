@@ -20,7 +20,7 @@ We recommend you start by reading the contributing guidelines of the repo (hopef
 
 If you are looking for inspiration for a new package, check out this [list of Umbraco package ideas](https://github.com/leekelleher/umbraco-package-ideas/).  This repo is also a great place to add your own idea if you are looking for feedback or guidance before you get started.
 
-If you release a new open source package during October this will count towards Umbraco's Hacktoberfest. Once you've published the package on the [Our website](https://our.umbraco.com/documentation/Extending/Packages/Uploading-to-Our/) please add it to the list of new packages on [Umbraco's Hacktoberfest Activity Log](https://github.com/umbraco/HacktoberfestActivityLog#new-umbraco-packages).
+If you release a new open source package during October this will count towards Umbraco's Hacktoberfest. Once you've published the package on the [Umbraco Marketplace](https://docs.umbraco.com/umbraco-dxp/marketplace/listing-your-package) please add it to the list of new packages on [Umbraco's Hacktoberfest Activity Log](https://github.com/umbraco/HacktoberfestActivityLog#new-umbraco-packages).
 
 If you would like to encourage other people to contribute to your new package, please follow the 'Package maintainers' instructions below.
 

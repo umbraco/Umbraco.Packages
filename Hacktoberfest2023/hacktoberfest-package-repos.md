@@ -5,6 +5,7 @@
 These packages are looking for contributions as part of this year's Umbraco Hacktoberfest:
 
 - [Admin Only Property](https://github.com/LottePitcher/umbraco-admin-only-property/labels/help%20wanted) - allows you to hide a document type property from certain users
+- [Clean Starter Kit](https://github.com/prjseal/Clean-Starter-Kit-for-Umbraco-v9) a simple and clean blog starter kit
 - [Contentment](https://github.com/leekelleher/umbraco-contentment/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) - adds a collection of powerful data editors to your Umbraco backoffice
 - [FullTextSearch](https://github.com/skttl/umbraco-fulltextsearch8) - Full Text Search
 - [uCaptcha](https://github.com/UmbHost/Our.Umbraco.Forms.uCaptcha/issues) - Captcha plugin for Umbraco Forms

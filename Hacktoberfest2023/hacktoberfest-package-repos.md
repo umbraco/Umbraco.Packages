@@ -19,6 +19,7 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 
 Contributions to these projects are also eligible for this year's Umbraco Hacktoberfest:
 
+- [High 5, You Rock!](https://github.com/H5YR/High5YouRock/issues) - a community website for giving virtual High 5s!
 - [Opinionated Package Starter Template](https://github.com/LottePitcher/opinionated-package-starter/issues) - a dotnet new template for creating, releasing and maintaining a v10+ Umbraco Package
 - [Package Script Writer](https://github.com/prjseal/Package-Script-Writer) - an online tool to generate install scripts for Umbraco packages
 

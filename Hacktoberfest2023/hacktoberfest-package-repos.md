@@ -9,6 +9,7 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 - [Contentment](https://github.com/leekelleher/umbraco-contentment/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) - adds a collection of powerful data editors to your Umbraco backoffice
 - [CSP Manager](https://github.com/Matthew-Wise/Umbraco-CSP-manager) - Allow for CSP managmanet via the CMS
 - [FullTextSearch](https://github.com/skttl/umbraco-fulltextsearch8) - Full Text Search
+- [Impersonator](https://github.com/skttl/umbraco-impersonator/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) - Impersonator - package for impersonating other backoffice users to eg. test permissions
 - [SeoToolkit](https://github.com/patrickdemooij9/SeoToolkit.Umbraco/labels/Help%20Wanted) - Package for easily adding + setting up SEO features for your website.
 - [uCaptcha](https://github.com/UmbHost/Our.Umbraco.Forms.uCaptcha/issues) - Captcha plugin for Umbraco Forms
 - [UmbCheckout](https://github.com/UmbHost/UmbCheckout/issues) - UmbCheckout an eCommerce solution for Umbraco

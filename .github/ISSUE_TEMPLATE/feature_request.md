@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Use this issue type if you want to submit a feature request that has something to do with Umbraco CMS, Marketplace functionality or package tooling, that you would like the Package Team members and contributors to discuss.
+about: Use this issue type to submit a feature request that relates to Umbraco CMS, Marketplace functionality or package tooling, that you would like the Package Team members and contributors to discuss.
 title: ""
 labels: category/feature-request
 ---

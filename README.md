@@ -1,5 +1,10 @@
 # Umbraco.Packages
 
+> [!TIP]
+> Looking for resources for the v14 new backoffice Bellissima? [Find them here](bellissima/README.md)
+
+-------
+
 Welcome to the GitHub home of the Umbraco Package team. If you want to read about the team's objectives and its current members, visit [the team page on the community website](https://community.umbraco.com/learn-about-the-community/community-teams/the-package-team/).
 
 This issue tracker is used for tracking Package Team tasks, but is open for community involvement. 

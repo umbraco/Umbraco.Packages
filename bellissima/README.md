@@ -52,7 +52,7 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 
 ### Articles
 
-<!-- - ??/04/24 [Creating your own UI extension points](https://dev.to/mattbrailsford/series/26940) - Matt Brailsford's six part series of learnings from working on Umbraco Commerce v14. -->
+- 02/04/24 [Creating your own UI extension points](https://dev.to/mattbrailsford/creating-your-own-ui-extension-points-in-umbraco-v14-part-1-the-basics-568h) - Matt Brailsford's shares some more learnings from working on Umbraco Commerce v14.
 
 - 21/03/24 [Using ChatGPT to Convert Backoffice Language Files](https://richardsoeteman.net/blog/converting-backoffice-language-files-using-chatgpt/) - Richard Soeteman shares how he used ChatGTP to automatically convert the backoffice language files in to the new Umbraco Bellissima format.
 

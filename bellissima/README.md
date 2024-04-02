@@ -7,7 +7,7 @@ HQ and the community have been hard at work understanding the new technologies i
 Many thanks to [Markus Johansson](https://www.enkelmedia.se/blogg/2023/11/18/resources-for-umbraco-14-bellissima-new-backoffice) for taking the initiative on collecting these resources, and to everyone listed below who has been working and learning in public. As this is a public repo, if we are missing any resources please raise a PR to add them.
 
 > [!TIP]
-> Visit the `package-development` channel in the [Umbraco Discord Server](https://discord.com/channels/869656431308189746/882984798719729704) to read Bellissima discussions from the last few months, and post your own questions if can't find answers elsewhere.
+> Visit the `package-development` channel in the [Umbraco Discord Server](https://discord.com/channels/869656431308189746/882984798719729704) to read Bellissima discussions from the last few months, and post your own questions if you can't find answers elsewhere.
 
 ## The Front-end Technologies
 
@@ -81,5 +81,7 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 - [Contentment v14 branch](https://github.com/leekelleher/umbraco-contentment/tree/dev/wip/bellissima) - Lee Kelleher's progress with the Contentment package on v14.
 
 - [Personalisation Groups v14 branch](https://github.com/AndyButland/UmbracoPersonalisationGroupsCore/tree/feature/migrate-to-14) - Andy Butland's progress with the Personalisation Groups package on v14.
+
+- [UI Examples](https://github.com/umbraco/UI-Examples/tree/dev/v14) - examples of how to use the Umbraco UI in real scenarios in the back office (still under development).
 
 - [Bellissima](https://github.com/umbraco/Umbraco.CMS.Backoffice) - the source code for the v14 new backoffice

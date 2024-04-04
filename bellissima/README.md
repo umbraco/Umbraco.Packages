@@ -85,3 +85,8 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 - [UI Examples](https://github.com/umbraco/UI-Examples/tree/dev/v14) - examples of how to use the Umbraco UI in real scenarios in the back office (still under development).
 
 - [Bellissima](https://github.com/umbraco/Umbraco.CMS.Backoffice) - the source code for the v14 new backoffice
+
+### Examples, snippets, scaffolding tools
+
+- [Umbraco CodeGen](https://github.com/rickbutterfield/umbracodegen) - a CLI tool to help scaffold Umbraco extensions.
+  

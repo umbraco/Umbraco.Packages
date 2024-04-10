@@ -34,7 +34,11 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 
 ### Videos
 
+- 04/04/24 [Packages Question Time - Bellissima Edition](https://youtu.be/3wwWkgJG71U) - Community package developers put questions to Jacob and Filip from Umbraco HQ.
+
 - 29/03/24 [umbraCoffee - Bellissima!](https://www.youtube.com/watch?v=COaq5oLRTvE) - umbraCoffee hosts Marcin and Callum talk with Richard Soeteman about his experience with the new backoffice while working on his packages Member Export, SEO Checker and Media Protect.
+
+- 26/03/24 [Bellissima Migrazione dei Pacchetti](https://youtu.be/7QgpDzZ8Cys) - Lee Kelleher's talk about migrating packages to v14, first given at Umbraco Spark.
 
 - 'UmbraCollab' sessions with Jacob Overgaard, Bellissima team lead at Umbraco HQ (recorded over Discord):
   - 27/03/24 [Umbraco Bellissima Property Editors - Part 2](https://www.youtube.com/watch?v=U2k6Qoj5dyc) - Jacob helps us make progress with converting the Our.Umbraco.GMaps property editor.
@@ -52,7 +56,7 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 
 ### Articles
 
-- 02/04/24 [Creating your own UI extension points](https://dev.to/mattbrailsford/creating-your-own-ui-extension-points-in-umbraco-v14-part-1-the-basics-568h) - Matt Brailsford's shares some more learnings from working on Umbraco Commerce v14.
+- 02/04/24 [Creating your own UI extension points](https://dev.to/mattbrailsford/series/26940) - Matt Brailsford shares a series of learnings from working on Umbraco Commerce v14.
 
 - 21/03/24 [Using ChatGPT to Convert Backoffice Language Files](https://richardsoeteman.net/blog/converting-backoffice-language-files-using-chatgpt/) - Richard Soeteman shares how he used ChatGTP to automatically convert the backoffice language files in to the new Umbraco Bellissima format.
 

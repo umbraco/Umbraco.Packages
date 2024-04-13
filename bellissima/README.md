@@ -41,6 +41,7 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 - 26/03/24 [Bellissima Migrazione dei Pacchetti](https://youtu.be/7QgpDzZ8Cys) - Lee Kelleher's talk about migrating packages to v14, first given at Umbraco Spark.
 
 - 'UmbraCollab' sessions with Jacob Overgaard, Bellissima team lead at Umbraco HQ (recorded over Discord):
+  - 27/03/24 [Umbraco Bellissima Property Editors - Part 3](https://www.youtube.com/watch?v=35rOUy8YBA4) - Sebastiaan and Jacob make even more progress!
   - 27/03/24 [Umbraco Bellissima Property Editors - Part 2](https://www.youtube.com/watch?v=U2k6Qoj5dyc) - Jacob helps us make progress with converting the Our.Umbraco.GMaps property editor.
   - 22/02/24 [Umbraco Bellissima Property Editors - First Look](https://www.youtube.com/watch?v=arztzoXqFzM) - Jacob helps us start with an empty install of a Bellissima preview release and build a property editor in JavaScript.
 
@@ -78,16 +79,18 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 
 ### Source Code
 
-- [Umbraco Workflow v14](https://github.com/umbraco/Umbraco.Workflow.Client.Preview/tree/main) - a preview of the client-side assets for Umbraco Workflow on v14, released by Nathan Wolfe for other package developers to review.
-
-- [uSync v14 branch](https://github.com/KevinJump/uSync/tree/v14/dev) - Kevin Jump's progress with the uSync package on v14.
-
-- [Contentment v14 branch](https://github.com/leekelleher/umbraco-contentment/tree/dev/wip/bellissima) - Lee Kelleher's progress with the Contentment package on v14.
-
-- [Personalisation Groups v14 branch](https://github.com/AndyButland/UmbracoPersonalisationGroupsCore/tree/feature/migrate-to-14) - Andy Butland's progress with the Personalisation Groups package on v14.
-
-- [UI Examples](https://github.com/umbraco/UI-Examples/tree/dev/v14) - examples of how to use the Umbraco UI in real scenarios in the back office (still under development).
-
 - [Bellissima](https://github.com/umbraco/Umbraco.CMS.Backoffice) - the source code for the v14 new backoffice
 
-- [Examine Peek](https://github.com/warrenbuckley/Examine-Peek) - A small simple package to show creating an Umbraco Entity Action to open a custom dialog with a simple API call
+- **Packages**
+
+  - [Umbraco Workflow v14](https://github.com/umbraco/Umbraco.Workflow.Client.Preview/tree/main) - a preview of the client-side assets for Umbraco Workflow on v14, released by Nathan Wolfe for other package developers to review.
+
+  - [uSync v14 branch](https://github.com/KevinJump/uSync/tree/v14/dev) - Kevin Jump's progress with the uSync package on v14.
+
+  - [Contentment v14 branch](https://github.com/leekelleher/umbraco-contentment/tree/dev/wip/bellissima) - Lee Kelleher's progress with the Contentment package on v14.
+
+  - [Personalisation Groups v14 branch](https://github.com/AndyButland/UmbracoPersonalisationGroupsCore/tree/feature/migrate-to-14) - Andy Butland's progress with the Personalisation Groups package on v14.
+
+  - [UI Examples](https://github.com/umbraco/UI-Examples/tree/dev/v14) - examples of how to use the Umbraco UI in real scenarios in the back office (still under development).
+
+  - [Examine Peek](https://github.com/warrenbuckley/Examine-Peek) - A small simple package to show creating an Umbraco Entity Action to open a custom dialog with a simple API call

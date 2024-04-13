@@ -41,7 +41,7 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 - 26/03/24 [Bellissima Migrazione dei Pacchetti](https://youtu.be/7QgpDzZ8Cys) - Lee Kelleher's talk about migrating packages to v14, first given at Umbraco Spark.
 
 - 'UmbraCollab' sessions with Jacob Overgaard, Bellissima team lead at Umbraco HQ (recorded over Discord):
-  - 27/03/24 [Umbraco Bellissima Property Editors - Part 3](https://www.youtube.com/watch?v=35rOUy8YBA4) - Sebastiaan and Jacob make even more progress!
+  - 11/04/24 [Umbraco Bellissima Property Editors - Part 3](https://www.youtube.com/watch?v=35rOUy8YBA4) - Sebastiaan and Jacob make even more progress!
   - 27/03/24 [Umbraco Bellissima Property Editors - Part 2](https://www.youtube.com/watch?v=U2k6Qoj5dyc) - Jacob helps us make progress with converting the Our.Umbraco.GMaps property editor.
   - 22/02/24 [Umbraco Bellissima Property Editors - First Look](https://www.youtube.com/watch?v=arztzoXqFzM) - Jacob helps us start with an empty install of a Bellissima preview release and build a property editor in JavaScript.
 

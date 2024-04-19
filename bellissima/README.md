@@ -21,11 +21,11 @@ If you want to do some background reading on the front-end technologies being us
 
 Umbraco HQ is keeping the official documentation updated as the project progresses:
 
-- [Beta Release Notes](https://our.umbraco.com/download/releases/1400) - expectation management about the status of the beta releases.
+- [Release Notes](https://our.umbraco.com/download/releases/1400) - expectation management about the status of the beta and RC releases.
 
 - [Backoffice Overview](https://docs.umbraco.com/umbraco-cms/v/14.latest-beta/extending-backoffice/customize-backoffice) - includes links to Storybook documentation and some terminology that we need to get familiar with.
 
-- [Installing v14](https://docs.umbraco.com/umbraco-cms/v/14.latest-beta/fundamentals/setup/install/preview-builds) - unless you need to be cutting edge, use the 'prerelease' feed not the 'nightly' feed.
+- [Installing v14](https://docs.umbraco.com/umbraco-cms/v/14.latest-rc/fundamentals/setup/install) 
 
 ## Other Resources
 

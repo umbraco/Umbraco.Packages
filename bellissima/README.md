@@ -21,11 +21,11 @@ If you want to do some background reading on the front-end technologies being us
 
 Umbraco HQ is keeping the official documentation updated as the project progresses:
 
-- [Beta Release Notes](https://our.umbraco.com/download/releases/1400) - expectation management about the status of the beta releases.
+- [Release Notes](https://our.umbraco.com/download/releases/1400) - expectation management about the status of the beta and RC releases.
 
 - [Backoffice Overview](https://docs.umbraco.com/umbraco-cms/v/14.latest-beta/extending-backoffice/customize-backoffice) - includes links to Storybook documentation and some terminology that we need to get familiar with.
 
-- [Installing v14](https://docs.umbraco.com/umbraco-cms/v/14.latest-beta/fundamentals/setup/install/preview-builds) - unless you need to be cutting edge, use the 'prerelease' feed not the 'nightly' feed.
+- [Installing v14](https://docs.umbraco.com/umbraco-cms/v/14.latest-rc/fundamentals/setup/install) 
 
 ## Other Resources
 
@@ -34,9 +34,15 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 
 ### Videos
 
+- 04/04/24 [Packages Question Time - Bellissima Edition](https://youtu.be/3wwWkgJG71U) - Community package developers put questions to Jacob and Filip from Umbraco HQ.
+
 - 29/03/24 [umbraCoffee - Bellissima!](https://www.youtube.com/watch?v=COaq5oLRTvE) - umbraCoffee hosts Marcin and Callum talk with Richard Soeteman about his experience with the new backoffice while working on his packages Member Export, SEO Checker and Media Protect.
 
+- 26/03/24 [Bellissima Migrazione dei Pacchetti](https://youtu.be/7QgpDzZ8Cys) - Lee Kelleher's talk about migrating packages to v14, first given at Umbraco Spark.
+
 - 'UmbraCollab' sessions with Jacob Overgaard, Bellissima team lead at Umbraco HQ (recorded over Discord):
+  - 18/04/24 [Umbraco Bellissima Property Editors - Part 4](https://www.youtube.com/watch?v=FrNgHrdg_m8) - the Our.Umbraco.GMaps property editor works, and a nuget package got created!
+  - 11/04/24 [Umbraco Bellissima Property Editors - Part 3](https://www.youtube.com/watch?v=35rOUy8YBA4) - Sebastiaan and Jacob make even more progress!
   - 27/03/24 [Umbraco Bellissima Property Editors - Part 2](https://www.youtube.com/watch?v=U2k6Qoj5dyc) - Jacob helps us make progress with converting the Our.Umbraco.GMaps property editor.
   - 22/02/24 [Umbraco Bellissima Property Editors - First Look](https://www.youtube.com/watch?v=arztzoXqFzM) - Jacob helps us start with an empty install of a Bellissima preview release and build a property editor in JavaScript.
 
@@ -52,7 +58,7 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 
 ### Articles
 
-- 02/04/24 [Creating your own UI extension points](https://dev.to/mattbrailsford/creating-your-own-ui-extension-points-in-umbraco-v14-part-1-the-basics-568h) - Matt Brailsford's shares some more learnings from working on Umbraco Commerce v14.
+- 02/04/24 [Creating your own UI extension points](https://dev.to/mattbrailsford/series/26940) - Matt Brailsford shares a series of learnings from working on Umbraco Commerce v14.
 
 - 21/03/24 [Using ChatGPT to Convert Backoffice Language Files](https://richardsoeteman.net/blog/converting-backoffice-language-files-using-chatgpt/) - Richard Soeteman shares how he used ChatGTP to automatically convert the backoffice language files in to the new Umbraco Bellissima format.
 
@@ -74,19 +80,28 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 
 ### Source Code
 
-- [Umbraco Workflow v14](https://github.com/umbraco/Umbraco.Workflow.Client.Preview/tree/main) - a preview of the client-side assets for Umbraco Workflow on v14, released by Nathan Wolfe for other package developers to review.
-
-- [uSync v14 branch](https://github.com/KevinJump/uSync/tree/v14/dev) - Kevin Jump's progress with the uSync package on v14.
-
-- [Contentment v14 branch](https://github.com/leekelleher/umbraco-contentment/tree/dev/wip/bellissima) - Lee Kelleher's progress with the Contentment package on v14.
-
-- [Personalisation Groups v14 branch](https://github.com/AndyButland/UmbracoPersonalisationGroupsCore/tree/feature/migrate-to-14) - Andy Butland's progress with the Personalisation Groups package on v14.
-
-- [UI Examples](https://github.com/umbraco/UI-Examples/tree/dev/v14) - examples of how to use the Umbraco UI in real scenarios in the back office (still under development).
-
 - [Bellissima](https://github.com/umbraco/Umbraco.CMS.Backoffice) - the source code for the v14 new backoffice
 
-### Examples, snippets, scaffolding tools
+- **Packages**
 
-- [Umbraco CodeGen](https://github.com/rickbutterfield/umbracodegen) - a CLI tool to help scaffold Umbraco extensions.
-  
+  - [Umbraco Workflow v14](https://github.com/umbraco/Umbraco.Workflow.Client.Preview/tree/main) - a preview of the client-side assets for Umbraco Workflow on v14, released by Nathan Wolfe for other package developers to review.
+
+  - [uSync v14 branch](https://github.com/KevinJump/uSync/tree/v14/dev) - Kevin Jump's progress with the uSync package on v14.
+
+  - [Contentment v14 branch](https://github.com/leekelleher/umbraco-contentment/tree/dev/wip/bellissima) - Lee Kelleher's progress with the Contentment package on v14.
+
+  - [Personalisation Groups v14 branch](https://github.com/AndyButland/UmbracoPersonalisationGroupsCore/tree/feature/migrate-to-14) - Andy Butland's progress with the Personalisation Groups package on v14.
+
+  - [UI Examples](https://github.com/umbraco/UI-Examples/tree/dev/v14) - examples of how to use the Umbraco UI in real scenarios in the back office (still under development).
+
+  - [Examine Peek](https://github.com/warrenbuckley/Examine-Peek) - A small simple package to show creating an Umbraco Entity Action to open a custom dialog with a simple API call
+ 
+  - [Umbraco.Community.Sustainability](https://github.com/rickbutterfield/Umbraco.Community.Sustainability/tree/feature/umbraco-14) - A package from the Umbraco Community Sustainability Team which helps developers and editors see and improve the carbon impact of their websites.
+
+  - [Bergmania.OpenStreetMap](https://github.com/bergmania/Bergmania.OpenStreetMap) - The Open Street Map package (used by The Starter Kit) now supports v14
+
+### Package Creation Tools
+
+- [Umbraco.Community.Early.Templates](https://dev.to/kevinjump/early-adopters-umbraco-package-template-fbh) - Kevin Jump's dotnet template that creates a solution with three elements (client, core and website), from which you can build a nuget package 
+
+- [Umbraco CodeGen](https://github.com/rickbutterfield/umbracodegen) - a npm package from community member Rick Butterfield that allows you to generate boilerplate code for building v14+ Umbraco packages via the CLI

@@ -95,3 +95,5 @@ Umbraco HQ is keeping the official documentation updated as the project progress
   - [UI Examples](https://github.com/umbraco/UI-Examples/tree/dev/v14) - examples of how to use the Umbraco UI in real scenarios in the back office (still under development).
 
   - [Examine Peek](https://github.com/warrenbuckley/Examine-Peek) - A small simple package to show creating an Umbraco Entity Action to open a custom dialog with a simple API call
+ 
+  - [Umbraco.Community.Sustainability](https://github.com/rickbutterfield/Umbraco.Community.Sustainability/tree/feature/umbraco-14) - A package from the Umbraco Community Sustainability Team which helps developers and editors see and improve the carbon impact of their websites.

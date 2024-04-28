@@ -97,3 +97,5 @@ Umbraco HQ is keeping the official documentation updated as the project progress
   - [Examine Peek](https://github.com/warrenbuckley/Examine-Peek) - A small simple package to show creating an Umbraco Entity Action to open a custom dialog with a simple API call
  
   - [Umbraco.Community.Sustainability](https://github.com/rickbutterfield/Umbraco.Community.Sustainability/tree/feature/umbraco-14) - A package from the Umbraco Community Sustainability Team which helps developers and editors see and improve the carbon impact of their websites.
+
+- [Bergmania.OpenStreetMap](https://github.com/bergmania/Bergmania.OpenStreetMap) - The Open Street Map package (used by The Starter Kit) now supports v14

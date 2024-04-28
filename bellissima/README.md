@@ -98,4 +98,10 @@ Umbraco HQ is keeping the official documentation updated as the project progress
  
   - [Umbraco.Community.Sustainability](https://github.com/rickbutterfield/Umbraco.Community.Sustainability/tree/feature/umbraco-14) - A package from the Umbraco Community Sustainability Team which helps developers and editors see and improve the carbon impact of their websites.
 
-- [Bergmania.OpenStreetMap](https://github.com/bergmania/Bergmania.OpenStreetMap) - The Open Street Map package (used by The Starter Kit) now supports v14
+  - [Bergmania.OpenStreetMap](https://github.com/bergmania/Bergmania.OpenStreetMap) - The Open Street Map package (used by The Starter Kit) now supports v14
+
+### Package Creation Tools
+
+- [Umbraco.Community.Early.Templates](https://dev.to/kevinjump/early-adopters-umbraco-package-template-fbh) - Kevin Jump's dotnet template that creates a solution with three elements (client, core and website), from which you can build a nuget package 
+
+- [Umbraco CodeGen](https://github.com/rickbutterfield/umbracodegen) - a npm package from community member Rick Butterfield that allows you to generate boilerplate code for building v14+ Umbraco packages via the CLI

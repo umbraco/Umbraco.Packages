@@ -34,6 +34,8 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 
 ### Videos
 
+- 26/04/24 [umbraCoffee - The (v14) Journey Continues](https://www.youtube.com/watch?v=UlupUvJs_zA) - umbraCoffee hosts Marcin and Callum are joined by Jacob Overgaard from Umbraco HQ and Kevin Jump for a discussion on v14's progress (after RC2 release)
+
 - 04/04/24 [Packages Question Time - Bellissima Edition](https://youtu.be/3wwWkgJG71U) - Community package developers put questions to Jacob and Filip from Umbraco HQ.
 
 - 29/03/24 [umbraCoffee - Bellissima!](https://www.youtube.com/watch?v=COaq5oLRTvE) - umbraCoffee hosts Marcin and Callum talk with Richard Soeteman about his experience with the new backoffice while working on his packages Member Export, SEO Checker and Media Protect.

@@ -32,6 +32,29 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 > [!WARNING]
 > Please remember that the resources listed below may be outdated. We have grouped them into sections, in descending date order.
 
+### Source Code
+Check out the following repositories for working code examples:
+
+- [Bellissima](https://github.com/umbraco/Umbraco.CMS.Backoffice) - the source code for the v14 new backoffice
+
+- **Packages**
+
+  - [Umbraco Workflow v14](https://github.com/umbraco/Umbraco.Workflow.Client.Preview/tree/main) - a preview of the client-side assets for Umbraco Workflow on v14, released by Nathan Wolfe for other package developers to review.
+
+  - [uSync v14 branch](https://github.com/KevinJump/uSync/tree/v14/dev) - Kevin Jump's progress with the uSync package on v14.
+
+  - [Contentment v14 branch](https://github.com/leekelleher/umbraco-contentment/tree/dev/wip/bellissima) - Lee Kelleher's progress with the Contentment package on v14.
+
+  - [Personalisation Groups v14 branch](https://github.com/AndyButland/UmbracoPersonalisationGroupsCore/tree/feature/migrate-to-14) - Andy Butland's progress with the Personalisation Groups package on v14.
+
+  - [UI Examples](https://github.com/umbraco/UI-Examples/tree/dev/v14) - examples of how to use the Umbraco UI in real scenarios in the back office (still under development).
+
+  - [Examine Peek](https://github.com/warrenbuckley/Examine-Peek) - A small simple package to show creating an Umbraco Entity Action to open a custom dialog with a simple API call
+ 
+  - [Umbraco.Community.Sustainability](https://github.com/rickbutterfield/Umbraco.Community.Sustainability/tree/feature/umbraco-14) - A package from the Umbraco Community Sustainability Team which helps developers and editors see and improve the carbon impact of their websites.
+
+  - [Bergmania.OpenStreetMap](https://github.com/bergmania/Bergmania.OpenStreetMap) - The Open Street Map package (used by The Starter Kit) now supports v14
+
 ### Videos
 
 - 26/04/24 [umbraCoffee - The (v14) Journey Continues](https://www.youtube.com/watch?v=UlupUvJs_zA) - umbraCoffee hosts Marcin and Callum are joined by Jacob Overgaard from Umbraco HQ and Kevin Jump for a discussion on v14's progress (after RC2 release)
@@ -79,28 +102,6 @@ Umbraco HQ is keeping the official documentation updated as the project progress
 - 23/09/23 [First Steps with Umbraco 14](https://www.andybutland.dev/2023/09/umbraco-14-package-migration.html) - Andy Butland, Head of DXP at Umbraco HQ, shares 4 posts about his first experiences with v14.
 
 - 21/10/22 [Back to the Front-end](https://dev.to/mattbrailsford/series/20031) - Matt Brailsford's 10 part series exploring each aspect of the frontend tech stack.
-
-### Source Code
-
-- [Bellissima](https://github.com/umbraco/Umbraco.CMS.Backoffice) - the source code for the v14 new backoffice
-
-- **Packages**
-
-  - [Umbraco Workflow v14](https://github.com/umbraco/Umbraco.Workflow.Client.Preview/tree/main) - a preview of the client-side assets for Umbraco Workflow on v14, released by Nathan Wolfe for other package developers to review.
-
-  - [uSync v14 branch](https://github.com/KevinJump/uSync/tree/v14/dev) - Kevin Jump's progress with the uSync package on v14.
-
-  - [Contentment v14 branch](https://github.com/leekelleher/umbraco-contentment/tree/dev/wip/bellissima) - Lee Kelleher's progress with the Contentment package on v14.
-
-  - [Personalisation Groups v14 branch](https://github.com/AndyButland/UmbracoPersonalisationGroupsCore/tree/feature/migrate-to-14) - Andy Butland's progress with the Personalisation Groups package on v14.
-
-  - [UI Examples](https://github.com/umbraco/UI-Examples/tree/dev/v14) - examples of how to use the Umbraco UI in real scenarios in the back office (still under development).
-
-  - [Examine Peek](https://github.com/warrenbuckley/Examine-Peek) - A small simple package to show creating an Umbraco Entity Action to open a custom dialog with a simple API call
- 
-  - [Umbraco.Community.Sustainability](https://github.com/rickbutterfield/Umbraco.Community.Sustainability/tree/feature/umbraco-14) - A package from the Umbraco Community Sustainability Team which helps developers and editors see and improve the carbon impact of their websites.
-
-  - [Bergmania.OpenStreetMap](https://github.com/bergmania/Bergmania.OpenStreetMap) - The Open Street Map package (used by The Starter Kit) now supports v14
 
 ### Package Creation Tools
 

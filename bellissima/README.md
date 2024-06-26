@@ -57,6 +57,8 @@ Check out the following repositories for working code examples:
 
 ### Videos
 
+- 26/04/24 [Umbraco HQ's v14 Playlist](https://www.youtube.com/playlist?list=PLG_nqaT-rbpwS9jpIHx5y_O2Dcnc_BhuC) - Umbraco HQ has released some of the short demos seen at Codegarden 2024, together with the official Umbraco 14 "unboxing" video with Lotte, Bjarke and Jacob.
+
 - 26/04/24 [umbraCoffee - The (v14) Journey Continues](https://www.youtube.com/watch?v=UlupUvJs_zA) - umbraCoffee hosts Marcin and Callum are joined by Jacob Overgaard from Umbraco HQ and Kevin Jump for a discussion on v14's progress (after RC2 release)
 
 - 04/04/24 [Packages Question Time - Bellissima Edition](https://youtu.be/3wwWkgJG71U) - Community package developers put questions to Jacob and Filip from Umbraco HQ.

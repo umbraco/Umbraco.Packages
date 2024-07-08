@@ -31,16 +31,6 @@ Use this issue type if you are looking for feedback on a package idea, or if you
 
 Use this issue type if you are looking for someone to help you maintain or update your package.
 
-## Progress and roadmap
-
-We will organize the issues into [projects](https://github.com/umbraco/Umbraco.Packages/projects) and work on one project at a time.
-
-We also use this repository to track our progress and to display a [roadmap](https://github.com/umbraco/Umbraco.Packages/projects/3) for the Package team. The roadmap is found under the projects tab, and it will contain other projects in a Now - Next - Later structure.
-
 ## Get in touch!
 
 If you want to get in touch with the team about something not covered by our issues then feel free to reach out to the team on Twitter [@umbracoPackages](https://twitter.com/umbracoPackages) (DMs are open), or write an email to packages@umbraco.com.
-
-## Package newsletter
-
-You can sign up for the [package newsletter](https://our.umbraco.com/about-packages/#package-newsletter), to receive updates on new features you can use as a package developer, breaking changes in new Umbraco versions and more.

@@ -4,6 +4,8 @@
 
 These packages are looking for contributions as part of this year's Umbraco Hacktoberfest:
 
+- [Umbraco.Community.BlockPreview](https://github.com/rickbutterfield/Umbraco.Community.BlockPreview/issues) - Easy to use rich HTML backoffice previews for the Umbraco Block List and Block Grid editors
+- [Umbraco.Community.Sustainability](https://github.com/umbraco-community/Umbraco.Community.Sustainability/discussions) - A package from the Umbraco Community Sustainability Team which helps developers and editors see and improve the carbon impact of their websites.
 - [UI Examples](https://github.com/umbraco/UI-Examples/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) - adds a new 'UI Examples' section with working examples of how to customise the backoffice
 
 ## Participating community projects

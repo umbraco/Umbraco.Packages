@@ -1,20 +1,19 @@
 # Hacktoberfest 2024 Umbraco package contributions
 
-Packages are an essential part of the Umbraco ecosystem, so package contributions are again eligible for [Umbraco's Hacktoberfest](https://umbraco.com/blog/umbraco-hacktoberfest-2024/).
+> [!TIP]
+> Looking for the list of eligible packages/projects to contribute to? Check out the [Hacktoberfest 2024 Umbraco package repo list](hacktoberfest-package-repos.md)
 
-*PLEASE NOTE: all contributions must be on a package that supports (or adds support for) the current version of Umbraco, i.e. v13+.*
+Packages are an essential part of the Umbraco ecosystem, so package contributions are again eligible for Umbraco's Hacktoberfest. Read more general information about Hacktoberfest contributions on [Umbraco's Contributing Docs](https://docs.umbraco.com/contributing/hacktoberfest-2024/contributing).
 
 On this page there is Hacktoberfest guidance for:
 
-- [People wanting to contribute to packages](#package-contributors)
 - [Creators of new packages](#package-creators)
 - [Maintainers of existing packages wanting contributions](#package-maintainers)
 
-## Package contributors
+If you're looking for packages to contribute to then visit the [list of eligible repositories](hacktoberfest-package-repos.md)
 
-If you are interested in contributing to an Umbraco package, check out the repositories on the [Hacktoberfest package repo list](hacktoberfest-package-repos.md). 
-
-We recommend you start by reading the contributing guidelines of the repo (hopefully there are some). It's always a good idea to comment on the issue you'd like to work on. This lets the maintainer, and other potential contributors, know that you are about to work on it.
+> [!IMPORTANT]
+> To count towards Umbraco's Hacktoberfest, packages must support (or be adding support for) the current LTS or later, i.e. v13+.
 
 ## Package creators
 

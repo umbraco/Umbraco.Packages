@@ -10,7 +10,7 @@ On this page there is Hacktoberfest guidance for:
 - [Creators of new packages](#package-creators)
 - [Maintainers of existing packages wanting contributions](#package-maintainers)
 
-If you're looking for packages to contribute to then vist the [list of eligible repositories](hacktoberfest-package-repos.md)
+If you're looking for packages to contribute to then visit the [list of eligible repositories](hacktoberfest-package-repos.md)
 
 > [!IMPORTANT]
 > To count towards Umbraco's Hacktoberfest, packages must support (or be adding support for) the current LTS or later, i.e. v13+.

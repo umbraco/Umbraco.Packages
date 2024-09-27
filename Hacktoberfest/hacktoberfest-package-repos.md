@@ -11,6 +11,7 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 - [Umbraco.Community.BlockPreview](https://github.com/rickbutterfield/Umbraco.Community.BlockPreview/issues) - Easy to use rich HTML backoffice previews for the Umbraco Block List and Block Grid editors
 - [Umbraco.Community.Sustainability](https://github.com/umbraco-community/Umbraco.Community.Sustainability/discussions) - A package from the Umbraco Community Sustainability Team which helps developers and editors see and improve the carbon impact of their websites.
 - [Umbraco.Community.CSPManager](https://github.com/Matthew-Wise/Umbraco-CSP-manager/issues) - Enabled Content security policy management via the CMS.
+- [UmbNav (V14)](https://github.com/AaronSadlerUK/UmbNav-V14/issues) - Drag and drop menu editor for Umbraco V14+
 
 ## Participating community projects
 

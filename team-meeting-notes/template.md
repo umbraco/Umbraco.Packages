@@ -1,7 +1,5 @@
 # Package team meeting [DATE]
-Attendees: Bolette, Callum, Carl, Dennis, Lotte, Marc, Mario, Richard, Ronald
-
-Notetaker: 
+Attendees: Ronald, Lotte, Carl, Dirk, Jesper, Johan, Marc, Richard, Warren
 
 ## Agenda
 - 
@@ -15,14 +13,4 @@ Notetaker:
 Next meeting is on [DATE].
 
 ## Tasks for next time
-For next time we aim to have made progress on:
-
-- Bolette
-- Callum
-- Carl
-- Dennis
-- Lotte
-- Marc
-- Mario
-- Richard
-- Ronald
+Ongoing tasks are being managed via the Package Team's [GitHub Project Board](https://github.com/orgs/umbraco/projects/41)

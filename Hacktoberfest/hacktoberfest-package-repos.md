@@ -12,7 +12,7 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 - [Umbraco.Community.Sustainability](https://github.com/umbraco-community/Umbraco.Community.Sustainability/discussions) - A package from the Umbraco Community Sustainability Team which helps developers and editors see and improve the carbon impact of their websites.
 - [Umbraco.Community.CSPManager](https://github.com/Matthew-Wise/Umbraco-CSP-manager/issues) - Enabled Content security policy management via the CMS.
 - [UmbNav (V14)](https://github.com/AaronSadlerUK/UmbNav-V14/issues) - Drag and drop menu editor for Umbraco V14+
-- [Accessible Media Picker](https://github.com/NikRimington/HCS.Media.AccessibleMediaPicker) - Alternative media picker with additional Image related accessibility fields for Umbraco
+- [Accessible Media Picker](https://github.com/NikRimington/HCS.Media.AccessibleMediaPicker/issues) - Alternative media picker with additional Image related accessibility fields for Umbraco
 
 ## Participating community projects
 

@@ -1,6 +1,12 @@
 # Umbraco.Packages
 
 > [!TIP]
+> 🎃💻 Looking for Hacktoberfest information you can find all information regarding repositories, events and how to get involved can be found here
+> https://umbraco.com/blog/join-us-for-umbraco-hacktoberfest-2024/
+
+-------
+
+> [!TIP]
 > Looking for resources for the v14 new backoffice Bellissima? [Find them here](bellissima/README.md)
 
 -------

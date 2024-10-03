@@ -13,7 +13,8 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 - [Umbraco.Community.CSPManager](https://github.com/Matthew-Wise/Umbraco-CSP-manager/issues) - Enabled Content security policy management via the CMS.
 - [UmbNav (V14)](https://github.com/AaronSadlerUK/UmbNav-V14/issues) - Drag and drop menu editor for Umbraco V14+
 - [Accessible Media Picker](https://github.com/NikRimington/HCS.Media.AccessibleMediaPicker/issues) - Alternative media picker with additional Image related accessibility fields for Umbraco
-
+- [Knowit.Umbraco.Dictinoid](https://github.com/kasparboelkjeldsen/Knowit.Umbraco.Dictionoid) - OpenAI/AzureAI translation helper to dictionary items in Umbraco - DevEx enhancements and much more
+- [Knowit.Umbraco.InstantBlockPreview](https://github.com/kasparboelkjeldsen/Knowit.Umbraco.InstantBlockPreview) - A highly configurable plugin allowing HTML preview directly in the Backoffice without saving your content first.
 ## Participating community projects
 
 Contributions to these projects are also eligible for this year's Umbraco Hacktoberfest:

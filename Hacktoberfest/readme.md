@@ -35,6 +35,6 @@ If you would like contributions to your package to count towards Umbraco's Hackt
 
 - Submit a pull request to the [Hacktoberfest 2024 package repo list](hacktoberfest-package-repos.md) that adds your package to the list (in alphabetical order). Ideally add it with a 'deep link' to those issues that you want help with
 
-For issues to be considered valid they must be valuable contributions, which is up to the discretion of the package team and will be based on the [Hacktoberfest quality standards](https://hacktoberfest.com/participation/#spam), as well as relating to v10 of Umbraco.
+If you receive eligible pull requests during October then adding the `hacktoberfest-accepted` label to the PR will ensure that they count towards the contributor's Hacktoberfest regardless of when you are able to merge them. Check out the [Hacktoberfest resources for maintainers](https://hacktoberfest.com/participation/#maintainers) for more information.
 
-Check out the [Hacktoberfest resources for maintainers](https://hacktoberfest.com/participation/#maintainers) for more information.
+For issues to be considered valid they must be valuable contributions, which is up to the discretion of the package team and will be based on the [Hacktoberfest quality standards](https://hacktoberfest.com/participation/#spam), as well as relating to v13+ of Umbraco.

@@ -21,6 +21,7 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 
 Contributions to these projects are also eligible for this year's Umbraco Hacktoberfest:
 
+- [Package Script Writer](https://github.com/prjseal/Package-Script-Writer) - a tool to help you generate the scripts needed to install Umbraco and the associated packages.
 - [High 5, You Rock!](https://github.com/H5YR/High5YouRock/issues) - a community website for giving virtual High 5s!
 - [Community Swag Store](https://umbracocommunity.store/contibute/) - no code, submit a new design for the community swag store.
   - Contribute using this repo [Umbraco Community Swag Logos](https://github.com/OwainWilliams/UmbracoCommunitySwagLogos) - repo for logos

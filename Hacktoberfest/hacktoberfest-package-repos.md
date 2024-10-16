@@ -17,6 +17,8 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 - [Knowit.Umbraco.InstantBlockPreview](https://github.com/kasparboelkjeldsen/Knowit.Umbraco.InstantBlockPreview/issues) - A highly configurable plugin allowing HTML preview directly in the Backoffice without saving your content first.
 - [BackOffice Editor View](https://github.com/Rockerby/Umbraco.BackOfficeEditorView/issues) - A package that allows content editors to see if someone else is also on their current page
 - [Seo Visualizer](https://github.com/enkelmedia/Umbraco-SeoVisualizer/issues) - A simple property editor displaying a search result snippet, to help editors write titles and meta descriptions.
+- [Cultiv Hangfire](https://github.com/nul800sebastiaan/Cultiv.Hangfire/issues) - A Hangfire dashboard for Umbraco.
+
 ## Participating community projects
 
 Contributions to these projects are also eligible for this year's Umbraco Hacktoberfest:

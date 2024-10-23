@@ -18,6 +18,7 @@ These packages are looking for contributions as part of this year's Umbraco Hack
 - [BackOffice Editor View](https://github.com/Rockerby/Umbraco.BackOfficeEditorView/issues) - A package that allows content editors to see if someone else is also on their current page
 - [Seo Visualizer](https://github.com/enkelmedia/Umbraco-SeoVisualizer/issues) - A simple property editor displaying a search result snippet, to help editors write titles and meta descriptions.
 - [Cultiv Hangfire](https://github.com/nul800sebastiaan/Cultiv.Hangfire/issues) - A Hangfire dashboard for Umbraco.
+- [UmbHost.Cloudflare.Purge](https://github.com/UmbHost/UmbHost.Cloudflare.Purge/issues) - A Cloudflare integration for Umbraco 13.
 
 ## Participating community projects
 

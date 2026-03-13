@@ -1,3 +1,6 @@
+> [!WARNING]
+> The information in this article was created in v14 and may not be relevant for future releases.
+ 
 # Umbraco v14 "Bellissima" Resources
 
 Umbraco v14 brings us a new backoffice, codenamed Bellissima, that replaces the legacy technology of AngularJS with the modern technologies of Web Components, Lit and TypeScript. The v14 release is planned for the end of May 2024, the first beta was released on March 6th.
